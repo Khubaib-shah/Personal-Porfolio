@@ -308,6 +308,7 @@ main {
 .avatar-box {
   background: var(--bg-gradient-onyx);
   border-radius: 20px;
+  padding: 2px;
 }
 
 .info-content .name {
@@ -1402,6 +1403,7 @@ textarea.form-input::-webkit-resizer {
 
   .testimonials-avatar-box img {
     width: 80px;
+    padding: 2px;
   }
 
   .testimonials-item-title {
