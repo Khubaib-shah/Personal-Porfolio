@@ -1,8 +1,8 @@
-# Khubaib Shah Portfolio ⚡️ [![GitHub](https://img.shields.io/github/license/cobiwave/simplefolio?color=blue)](https://github.com/cobiwave/simplefolio/blob/master/LICENSE.md) ![GitHub stars](https://img.shields.io/github/stars/cobiwave/simplefolio) ![GitHub forks](https://img.shields.io/github/forks/cobiwave/simplefolio)
+# Khubaib Shah Portfolio ⚡️ 
 
 ## A Minimal Portfolio to Showcase My Work
 
-<h2 align="center"> <img src="https://media.giphy.com/media/3o7aD6W9A1Oi0O3yVq/giphy.gif" alt="Portfolio Demo" width="600px" /> <br> </h2>
+<h2 align="center"> <img src="https://res.cloudinary.com/dvyhnxnpq/image/upload/v1764019694/my_portfolio_ll3dn4.png" alt="Portfolio Demo" width="600px" /> <br> </h2>
 
 ## Features
 
