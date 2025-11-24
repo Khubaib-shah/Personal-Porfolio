@@ -2,7 +2,7 @@
 
 ## A Minimal Portfolio to Showcase My Work
 
-<h2 align="center"> <img src="https://res.cloudinary.com/dvyhnxnpq/image/upload/v1764019694/my_portfolio_ll3dn4.png" alt="Portfolio Demo" width="600px" /> <br> </h2>
+<h2 align="center"> <img src="https://res.cloudinary.com/dvyhnxnpq/image/upload/v1764019694/my_portfolio_ll3dn4.png" alt="Portfolio Demo"  /> <br> </h2>
 
 ## Features
 
