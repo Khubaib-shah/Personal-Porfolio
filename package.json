@@ -1,0 +1,34 @@
+{
+  "name": "khubaibshah",
+  "version": "1.0.1",
+  "private": "true",
+"description": "mern stack Developer skilled in building scalable web & mobile apps using MongoDB, express, react, react native and Node.js with expertise in APIs, real-time features and database optimization!",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/khubaib-shah/Personal-Porfolio"
+  },
+  "keywords": [],
+  "author": "Khubaib Shah",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/khubaib-shah/Personal-Porfolio/issues"
+  },
+  "homepage": "https://github.com/khubaib-shah/Personal-Porfolio#readme",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.8.2",
+    "parcel": "^2.8.2",
+    "prettier": "^2.8.1"
+  },
+  "dependencies": {
+    "@popperjs/core": "^2.11.6",
+    "bootstrap": "^5.2.3",
+    "jquery": "^3.6.3",
+    "popper.js": "^1.16.1",
+    "vanilla-tilt": "^1.8.0"
+  }
+}
