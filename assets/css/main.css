@@ -1899,6 +1899,10 @@ only screen and (min-width: 768px) and (max-width: 991px),
   .tp-header-logo {
     padding: 10px 0;
   }
+
+  .tp-header-logo img {
+    scale: 1;
+  }
 }
 
 .tp-header-white-bar span {
@@ -3392,6 +3396,26 @@ only screen and (min-width: 576px) and (max-width: 767px),
 /*----------------------------------------*/
 /*  8.0 Faq Css
 /*----------------------------------------*/
+.faq-btn {
+  background: transparent !important;
+  color: #fff !important;
+  box-shadow: none !important;
+  padding: 20px 0 !important;
+  font-size: 24px !important;
+  font-weight: 500 !important;
+}
+
+@media (max-width: 767px) {
+  .faq-btn {
+    font-size: 18px !important;
+    padding: 15px 0 !important;
+  }
+}
+
+.faq-btn::after {
+  filter: brightness(0) invert(1);
+}
+
 /* ===== Home-1 Start ===== */
 
 /* ===== Home-4 Start ===== */
