@@ -2656,17 +2656,21 @@ only screen and (min-width: 768px) and (max-width: 991px),
   letter-spacing: -0.02em;
   color: var(--tp-common-white);
   position: relative;
+  display: inline-flex;
+  align-items: center;
 }
 
 .md-footer-widget-sm-title.pre::before {
   content: "";
   width: 8px;
   height: 8px;
+  min-width: 8px;
   margin-right: 9px;
   border-radius: 50%;
   display: inline-block;
-  transform: translateY(-2px);
-  background-color: var(--tp-theme-blue);
+  transform: none;
+  background-color: var(--tp-common-white);
+  flex-shrink: 0;
 }
 
 .md-footer-widget-menu ul li {
@@ -3411,14 +3415,17 @@ only screen and (min-width: 576px) and (max-width: 767px),
 }
 
 .pp-skill-list-title span {
-  display: inline-block;
-  transform: translateX(50px);
+  display: block;
+  width: 100%;
+  max-width: 195px;
+  margin-top: 8px;
+  overflow: hidden;
 }
 
-@media only screen and (min-width: 1200px) and (max-width: 1399px) {
-  .pp-skill-list-title span {
-    transform: translateX(10px);
-  }
+.pp-skill-list-title span svg {
+  display: block;
+  width: 100%;
+  height: auto;
 }
 
 @media only screen and (min-width: 992px) and (max-width: 1199px),
