@@ -661,9 +661,10 @@
 
 
 
-	// 32. ripples imgs //
+	// 32. ripples imgs (Desktop only: >= 1024px with fine mouse pointer) //
+	var isDesktopPointer = window.innerWidth >= 1024 && window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches;
 	var $rippleImgs = $(".ripple-image");
-	if ($rippleImgs.length) {
+	if (isDesktopPointer && $rippleImgs.length) {
 		$rippleImgs.each(function () {
 			var $container = $(this);
 			var $img = $container.find("img").first();
@@ -680,8 +681,8 @@
 			});
 		});
 
-		// Only activate interactive WebGL ripples on desktop with pointer
-		if (!isTouchDevice && typeof $.fn.ripples !== 'undefined') {
+		var initRipples = function () {
+			if (typeof $.fn.ripples === 'undefined') return;
 			if ('IntersectionObserver' in window) {
 				const rippleObserver = new IntersectionObserver((entries) => {
 					entries.forEach(entry => {
@@ -723,9 +724,14 @@
 					} catch (e) {}
 				});
 			}
+		};
+
+		if (typeof $.fn.ripples !== 'undefined') {
+			initRipples();
+		} else {
+			$(window).on('load', initRipples);
 		}
 	}
-
 
 	// 33. scroll with moving text
 	function moving_text() {
