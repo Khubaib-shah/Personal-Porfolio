@@ -1,7 +1,8 @@
 (function ($) {
     "use strict";
     
-    if ($("body").not(".is-mobile").hasClass("tp-magic-cursor")) {
+    const hasPointer = window.matchMedia && window.matchMedia('(hover: hover) and (pointer: fine)').matches && window.innerWidth >= 1024;
+    if (hasPointer && $("body").not(".is-mobile").hasClass("tp-magic-cursor")) {
         $(".tp-magnetic-item").wrap('<div class="tp-magnetic-wrap"></div>');
 
         if ($("a.tp-magnetic-item").length) {

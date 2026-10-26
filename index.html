@@ -102,23 +102,20 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
-  <link rel="shortcut icon" href="assets/img/favicon/favicon.ico" />
+  <link rel="preload" as="image" href="assets/img/hero/hero-person.webp" fetchpriority="high" type="image/webp" />
   <!-- CSS here start-->
   <link rel="stylesheet" href="assets/css/bootstrap.css" />
   <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
-  <link rel="stylesheet" href="assets/css/magnific-popup.css" />
-  <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+  <link rel="stylesheet" href="assets/css/font-awesome-pro.css" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
+  </noscript>
   <link rel="stylesheet" href="assets/css/spacing.css" />
   <link rel="stylesheet" href="assets/css/main.css" />
   <!-- CSS here end-->
 </head>
 
 <body class="tp-magic-cursor">
-  <!-- Magic Cursor -->
-  <div id="magic-cursor">
-    <div id="ball"></div>
-  </div>
-  <!-- Magic Cursor End -->
 
   <!-- offcanvas start -->
   <div class="tp-offcanvas-2-area p-relative offcanvas-2-black-bg">
@@ -391,8 +388,8 @@
                 Shah
               </h2>
               <img id="pp-hero-person-move" class="pp-hero-person tp_fade_anim" data-delay="0.5"
-                src="assets/img/hero/hero-person.png" alt="Khubaib Shah - Freelance Full Stack Web Developer"
-                style="width: 70%; max-width: 900px;" />
+                src="assets/img/hero/hero-person.webp" alt="Khubaib Shah - Freelance Full Stack Web Developer"
+                fetchpriority="high" decoding="async" style="width: 70%; max-width: 900px; height: auto;" />
               <h2 class="pp-hero-title pp-hero-title-stroke tp-char-animation">
                 Khubaib <br />
                 Shah
@@ -486,8 +483,8 @@
         <!-- ========== Banner Start ========== -->
         <div class="tp-banner-area pp-banner-style scale-up-img w-100" style="width: 100%; max-width: 100%;">
           <div class="tp-banner-img w-100" style="width: 100%; max-width: 100%;">
-            <img class="img-cover scale-up w-100" data-speed=".8" src="assets/img/banner/banner-1.png" alt=""
-              style="width: 100%; max-width: 100%; object-fit: cover;" />
+            <img class="img-cover scale-up w-100" data-speed=".8" src="assets/img/banner/banner-1.webp" alt=""
+              loading="lazy" decoding="async" style="width: 100%; max-width: 100%; object-fit: cover;" />
           </div>
         </div>
         <!-- ========== Banner End ========== -->
@@ -508,17 +505,19 @@
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://azfoodcorner.com/" target="_blank">
                         <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
-                          <img src="assets/img/portfolio/azfood.png" alt="KS Ordering Management platform"
-                            loading="lazy" />
+                          <img src="assets/img/portfolio/azfood.webp" alt="KS Ordering Management platform"
+                            loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
                     <div class="cr-portfolio-content-wrap d-md-flex justify-content-between align-items-start">
                       <div class="cr-portfolio-content">
                         <h3 class="cr-portfolio-title mb-15">
-                          <a class="tp-line-black" href="https://azfoodcorner.com/" target="_blank">KS Ordering Management platform</a>
+                          <a class="tp-line-black" href="https://azfoodcorner.com/" target="_blank">KS Ordering
+                            Management platform</a>
                         </h3>
-                        <p>Multi-tenant white-label restaurant platform for managing online ordering, POS, multi-branch and kitchen operations, printing, reporting, and tenant-specific branding.
+                        <p>Multi-tenant white-label restaurant platform for managing online ordering, POS, multi-branch
+                          and kitchen operations, printing, reporting, and tenant-specific branding.
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
@@ -534,8 +533,8 @@
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://apply-os-demo.vercel.app/" target="_blank">
                         <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
-                          <img src="assets/img/portfolio/applyos.png" alt="Apply OS Job Application System"
-                            loading="lazy" />
+                          <img src="assets/img/portfolio/applyos.webp" alt="Apply OS Job Application System"
+                            loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -544,7 +543,8 @@
                         <h3 class="cr-portfolio-title mb-15">
                           <a class="tp-line-black" href="https://apply-os-demo.vercel.app/" target="_blank">Apply Os</a>
                         </h3>
-                        <p>AI-powered job application platform that generates tailored ATS resumes, cover letters, and personalized outreach—while helping you find the right recruiters and hiring managers.
+                        <p>AI-powered job application platform that generates tailored ATS resumes, cover letters, and
+                          personalized outreach—while helping you find the right recruiters and hiring managers.
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
@@ -561,8 +561,8 @@
                     <div class="not-hide-cursor" data-cursor="View<br>Details">
                       <a class="cursor-hide" href="https://pizza-xpert-demo.vercel.app/" target="_blank">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/pizza-xpert.png"
-                            alt="Pizza Xpert premium online pizza ordering platform" loading="lazy" />
+                          <img src="assets/img/portfolio/pizza-xpert.webp"
+                            alt="Pizza Xpert premium online pizza ordering platform" loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -591,8 +591,8 @@
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://www.azzipizza.it/" target="_blank">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/azzpizza.png" alt="Azzipizza Real-Time Pizza Ordering System"
-                            loading="lazy" />
+                          <img src="assets/img/portfolio/azzpizza.webp" alt="Azzipizza Real-Time Pizza Ordering System"
+                            loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -621,8 +621,8 @@
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://gymflow-management.vercel.app" target="_blank">
                         <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
-                          <img src="assets/img/portfolio/gymflow.png" alt="GymFlow Multi-Tenant SaaS Platform"
-                            loading="lazy" />
+                          <img src="assets/img/portfolio/gymflow.webp" alt="GymFlow Multi-Tenant SaaS Platform"
+                            loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -653,8 +653,8 @@
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://sole-bazar.vercel.app/" target="_blank">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/solebazaar.png" alt="SoleBazaar Scalable eCommerce Platform"
-                            loading="lazy" />
+                          <img src="assets/img/portfolio/solebazaar.webp" alt="SoleBazaar Scalable eCommerce Platform"
+                            loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -683,8 +683,8 @@
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://cortado-demo.vercel.app/" target="_blank">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/cortado.png" alt="Cortado Modern e-commerce platform"
-                            loading="lazy" />
+                          <img src="assets/img/portfolio/cortado.webp" alt="Cortado Modern e-commerce platform"
+                            loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -712,8 +712,8 @@
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://feeva.vercel.app/" target="_blank">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/feeva.png" alt="Feeva School Management System"
-                            loading="lazy" />
+                          <img src="assets/img/portfolio/feeva.webp" alt="Feeva School Management System" loading="lazy"
+                            decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -742,8 +742,8 @@
                       <a class="cursor-hide" href="https://find-it-branding-web.vercel.app/"
                         title="View FindIt Mobile Application">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/findit.png"
-                            alt="FindIt - Lost and Found Community  Application" loading="lazy" />
+                          <img src="assets/img/portfolio/findit.webp"
+                            alt="FindIt - Lost and Found Community  Application" loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -773,8 +773,9 @@
                       <a class="cursor-hide" href="https://interior-design-khubaib.vercel.app/"
                         title="View Living Lines Interior Design App">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/livinglines.png"
-                            alt="Living Lines - Interior Design E-commerce Web Application" loading="lazy" />
+                          <img src="assets/img/portfolio/livinglines.webp"
+                            alt="Living Lines - Interior Design E-commerce Web Application" loading="lazy"
+                            decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -806,8 +807,9 @@
                       <a class="cursor-hide" href="https://shaadi-booking-crm.vercel.app/" target="_blank"
                         title="View Shaadi Book CRM Live">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/shaadi booking crm.png"
-                            alt="Shaadi Book - Event Booking CRM and Management Dashboard" loading="lazy" />
+                          <img src="assets/img/portfolio/shaadi booking crm.webp"
+                            alt="Shaadi Book - Event Booking CRM and Management Dashboard" loading="lazy"
+                            decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -842,7 +844,8 @@
                       <a class="cursor-hide" href="#" title="ComplyEze Project Details">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
                           <img src="assets/img/portfolio/coming-sson.jpg"
-                            alt="ComplyEze - Enterprise E-Invoicing System (Coming Soon)" loading="lazy" />
+                            alt="ComplyEze - Enterprise E-Invoicing System (Coming Soon)" loading="lazy"
+                            decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -872,7 +875,7 @@
                       <a class="cursor-hide" href="#" title="Island Care Project Details">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
                           <img src="assets/img/portfolio/coming-sson.jpg"
-                            alt="Island Care - Service Marketplace (Coming Soon)" loading="lazy" />
+                            alt="Island Care - Service Marketplace (Coming Soon)" loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -903,8 +906,9 @@
                       <a class="cursor-hide" href="https://the-artisan-wagon.vercel.app/" target="_blank"
                         title="View The Artisan Wagon Live">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/artisan vegon.png"
-                            alt="The Artisan Wagon - Restaurant E-commerce and Management System" loading="lazy" />
+                          <img src="assets/img/portfolio/artisan vegon.webp"
+                            alt="The Artisan Wagon - Restaurant E-commerce and Management System" loading="lazy"
+                            decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -939,9 +943,9 @@
                       <a class="cursor-hide" href="https://ghalib-restaurant-template.vercel.app/" target="_blank"
                         title="View White-label Restaurant Template Live">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/restaurant-template.png"
+                          <img src="assets/img/portfolio/restaurant-template.webp"
                             alt="White-label Restaurant Template - Restaurant E-commerce and Management System"
-                            loading="lazy" />
+                            loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -1295,7 +1299,7 @@
                   <div class="swiper-slide">
                     <div class="md-testimonial-item">
                       <div class="md-testimonial-qoute mb-25">
-                        <img src="assets/img/testimonial/qoute.png" alt="" / loading="lazy">
+                        <img src="assets/img/testimonial/qoute.png" alt="" loading="lazy" decoding="async" />
                       </div>
                       <div class="md-testimonial-text mb-30">
                         <p>
@@ -1306,7 +1310,7 @@
                       </div>
                       <div class="md-testimonial-author-wrapper d-flex align-items-center">
                         <div class="md-testimonial-author-avatar">
-                          <img src="assets/img/testimonial/author-1.png" alt="" / loading="lazy">
+                          <img src="assets/img/testimonial/author-1.png" alt="" loading="lazy" decoding="async" />
                         </div>
                         <div class="md-testimonial-author-info">
                           <h4 class="md-testimonial-author-title">
@@ -1320,7 +1324,7 @@
                   <div class="swiper-slide">
                     <div class="md-testimonial-item">
                       <div class="md-testimonial-qoute mb-25">
-                        <img src="assets/img/testimonial/qoute.png" alt="" / loading="lazy">
+                        <img src="assets/img/testimonial/qoute.png" alt="" loading="lazy" decoding="async" />
                       </div>
                       <div class="md-testimonial-text mb-30">
                         <p>
@@ -1331,7 +1335,7 @@
                       </div>
                       <div class="md-testimonial-author-wrapper d-flex align-items-center">
                         <div class="md-testimonial-author-avatar">
-                          <img src="assets/img/testimonial/author-2.png" alt="" / loading="lazy">
+                          <img src="assets/img/testimonial/author-2.png" alt="" loading="lazy" decoding="async" />
                         </div>
                         <div class="md-testimonial-author-info">
                           <h4 class="md-testimonial-author-title">
@@ -1345,7 +1349,7 @@
                   <div class="swiper-slide">
                     <div class="md-testimonial-item">
                       <div class="md-testimonial-qoute mb-25">
-                        <img src="assets/img/testimonial/qoute.png" alt="" / loading="lazy">
+                        <img src="assets/img/testimonial/qoute.png" alt="" loading="lazy" decoding="async" />
                       </div>
                       <div class="md-testimonial-text mb-30">
                         <p>
@@ -1356,7 +1360,7 @@
                       </div>
                       <div class="md-testimonial-author-wrapper d-flex align-items-center">
                         <div class="md-testimonial-author-avatar">
-                          <img src="assets/img/testimonial/author-3.png" alt="" / loading="lazy">
+                          <img src="assets/img/testimonial/author-3.png" alt="" loading="lazy" decoding="async" />
                         </div>
                         <div class="md-testimonial-author-info">
                           <h4 class="md-testimonial-author-title">
@@ -1370,7 +1374,7 @@
                   <div class="swiper-slide">
                     <div class="md-testimonial-item">
                       <div class="md-testimonial-qoute mb-25">
-                        <img src="assets/img/testimonial/qoute.png" alt="" / loading="lazy">
+                        <img src="assets/img/testimonial/qoute.png" alt="" loading="lazy" decoding="async" />
                       </div>
                       <div class="md-testimonial-text mb-30">
                         <p>
@@ -1381,7 +1385,7 @@
                       </div>
                       <div class="md-testimonial-author-wrapper d-flex align-items-center">
                         <div class="md-testimonial-author-avatar">
-                          <img src="assets/img/testimonial/author-1.png" alt="" / loading="lazy">
+                          <img src="assets/img/testimonial/author-1.png" alt="" loading="lazy" decoding="async" />
                         </div>
                         <div class="md-testimonial-author-info">
                           <h4 class="md-testimonial-author-title">
@@ -1549,7 +1553,7 @@
                   <div
                     class="tp-contact-us-graphic p-relative pr-lg-40 tp_fade_anim w-100 h-100 d-flex align-items-center justify-content-center"
                     data-fade-from="left">
-                    <img src="assets/img/contact/model.png" alt="Let's connect"
+                    <img src="assets/img/contact/model.webp" alt="Let's connect" loading="lazy" decoding="async"
                       style="max-width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); object-fit: cover;" />
                   </div>
                 </div>
@@ -1558,18 +1562,21 @@
                     <h3 class="tp-contact-us-title mb-55 text-white">
                       Send a Message
                     </h3>
-                    <form id="contact-form" action="#" method="POST">
+                    <form id="contact-form" action="https://formsubmit.co/syedkhubaibshah@icloud.com" method="POST">
+                      <input type="hidden" name="_subject" value="New Portfolio Message from Khubaib Shah Portfolio" />
+                      <input type="hidden" name="_captcha" value="false" />
+                      <input type="hidden" name="_template" value="table" />
                       <div class="row">
                         <div class="col-lg-6">
                           <div class="tp-contact-form-input mb-20">
                             <label class="text-white">Full name*</label>
-                            <input name="name" type="text" />
+                            <input name="name" type="text" required />
                           </div>
                         </div>
                         <div class="col-lg-6">
                           <div class="tp-contact-form-input mb-20">
                             <label class="text-white">Email address*</label>
-                            <input name="email" type="email" />
+                            <input name="email" type="email" required />
                           </div>
                         </div>
                         <div class="col-lg-12">
@@ -1582,7 +1589,7 @@
                           <div class="tp-contact-form-input mb-20">
                             <label class="text-white">How Can We Help You*
                             </label>
-                            <textarea name="message"></textarea>
+                            <textarea name="message" required></textarea>
                           </div>
                           <div class="tp-contact-form-btn">
                             <button class="w-100" type="submit">
@@ -1699,27 +1706,14 @@
   </div>
 
   <!-- JS start here -->
-  <script src="assets/js/vendor/jquery.js"></script>
-  <script src="assets/js/swiper-bundle.js"></script>
-  <script src="assets/js/bootstrap-bundle.js"></script>
-  <script src="assets/js/plugin.js"></script>
-  <!-- GSAP Plugins -->
-  <script src="assets/js/ScrollTrigger.min.js"></script>
-  <script src="assets/js/ScrollToPlugin.min.js"></script>
-  <script src="assets/js/ScrollSmoother.min.js"></script>
-  <script src="assets/js/SplitText.min.js"></script>
-  <!-- End GSAP Plugins -->
-  <script src="assets/js/three.js"></script>
-  <script src="assets/js/ripples.min.js"></script>
-  <script src="assets/js/hover-effect.umd.js"></script>
-  <script src="assets/js/split-type.js"></script>
-  <script src="assets/js/webgl.js"></script>
-  <script src="assets/js/Observer.min.js"></script>
-  <script src="assets/js/imagesloaded.pkgd.min.js"></script>
-  <script src="assets/js/slider-active.js"></script>
-  <script src="assets/js/tp-cursor.js"></script>
-  <script src="assets/js/main.js"></script>
-  <script type="module" src="assets/js/distortion-img.js"></script>
+  <script src="assets/js/vendor/jquery.js" defer></script>
+  <script src="assets/js/bootstrap-bundle.js" defer></script>
+  <script src="assets/js/plugin.js" defer></script>
+  <script src="assets/js/swiper-bundle.js" defer></script>
+  <script src="assets/js/ripples.min.js" defer></script>
+  <script src="assets/js/slider-active.js" defer></script>
+  <script src="assets/js/tp-cursor.js" defer></script>
+  <script src="assets/js/main.js" defer></script>
   <!-- JS end here -->
 </body>
 

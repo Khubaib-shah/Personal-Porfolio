@@ -172,14 +172,18 @@
 		if (typeof ScrollToPlugin !== 'undefined') _plugins.push(ScrollToPlugin);
 		if (_plugins.length) gsap.registerPlugin.apply(gsap, _plugins);
 	}
+	const isTouchDevice = ('ontouchstart' in window || navigator.maxTouchPoints > 0 || window.innerWidth < 1024);
+
 	if (typeof ScrollSmoother !== 'undefined' && ScrollSmoother.create && $('#smooth-wrapper').length && $('#smooth-content').length) {
 		try {
-			ScrollSmoother.create({
-				smooth: 1.35,
-				effects: true,
-				smoothTouch: .1,
-				ignoreMobileResize: true
-			});
+			if (!isTouchDevice) {
+				ScrollSmoother.create({
+					smooth: 1.35,
+					effects: true,
+					smoothTouch: false,
+					ignoreMobileResize: true
+				});
+			}
 		} catch (e) {
 			console.warn('ScrollSmoother init failed:', e);
 		}
@@ -337,17 +341,17 @@
 
 	// 19. hover reveal for image //
 	const hoverItem = document.querySelectorAll(".hover-reveal-item");
-	function moveImage(e, hoverItem) {
-		const item = hoverItem.getBoundingClientRect();
-		const x = e.clientX - item.x;
-		const y = e.clientY - item.y;
-		if (hoverItem.children[1]) {
-			hoverItem.children[1].style.transform = `translate(${x}px, ${y}px)`;
+	function moveImage(e, item) {
+		const rect = item.getBoundingClientRect();
+		const x = e.clientX - rect.left;
+		const y = e.clientY - rect.top;
+		if (item.children[1]) {
+			item.children[1].style.transform = `translate(${x}px, ${y}px)`;
 		}
 	}
-	hoverItem.forEach((item, i) => {
+	hoverItem.forEach((item) => {
 		item.addEventListener("mousemove", (e) => {
-			setInterval(moveImage(e, item), 100);
+			moveImage(e, item);
 		});
 	});
 
@@ -658,36 +662,69 @@
 
 
 	// 32. ripples imgs //
-	imagesLoaded(".ripple-image img", function () {
-		$(".ripple-image").each(function () {
-
+	var $rippleImgs = $(".ripple-image");
+	if ($rippleImgs.length) {
+		$rippleImgs.each(function () {
 			var $container = $(this);
 			var $img = $container.find("img").first();
 			var imgURL = $img.attr("src");
 
-			// hide the image as we use background-image on container
 			$img.hide();
-
-			// Use a standard aspect ratio for portfolio items to avoid huge empty spaces
-			// background-size must be cover to prevent WebGL ripples edge clamping stretch effect
 			$container.css({
-				aspectRatio: "16 / 9", // You can adjust this to 16/9 if preferred
+				aspectRatio: "16 / 9",
 				width: "100%",
 				backgroundImage: "url(" + imgURL + ")",
 				backgroundSize: "contain",
 				backgroundRepeat: "no-repeat",
 				backgroundPosition: "center bottom"
 			});
-
-			// apply ripples
-			$container.ripples({
-				resolution: 400,
-				perturbance: 0.03,
-				imageUrl: imgURL
-			});
-
 		});
-	});
+
+		// Only activate interactive WebGL ripples on desktop with pointer
+		if (!isTouchDevice && typeof $.fn.ripples !== 'undefined') {
+			if ('IntersectionObserver' in window) {
+				const rippleObserver = new IntersectionObserver((entries) => {
+					entries.forEach(entry => {
+						const $target = $(entry.target);
+						if (entry.isIntersecting) {
+							if (!$target.data('ripples-inited')) {
+								$target.data('ripples-inited', true);
+								var imgURL = $target.find("img").first().attr("src");
+								try {
+									$target.ripples({
+										resolution: 256,
+										perturbance: 0.03,
+										imageUrl: imgURL
+									});
+								} catch (err) {}
+							}
+							try { $target.ripples('play'); } catch (e) {}
+						} else {
+							if ($target.data('ripples-inited')) {
+								try { $target.ripples('pause'); } catch (e) {}
+							}
+						}
+					});
+				}, { rootMargin: '100px' });
+
+				$rippleImgs.each(function () {
+					rippleObserver.observe(this);
+				});
+			} else {
+				$rippleImgs.each(function () {
+					var $container = $(this);
+					var imgURL = $container.find("img").first().attr("src");
+					try {
+						$container.ripples({
+							resolution: 256,
+							perturbance: 0.03,
+							imageUrl: imgURL
+						});
+					} catch (e) {}
+				});
+			}
+		}
+	}
 
 
 	// 33. scroll with moving text
@@ -878,60 +915,67 @@
 	}
 
 	// 41. Split text into characters using SplitType
-	const text = new SplitType('.text', { types: 'chars' });
-	const length = text.chars.length;
+	if (typeof SplitType !== 'undefined' && $('.text').length > 0) {
+		const text = new SplitType('.text', { types: 'chars' });
+		const length = text.chars.length;
 
-	text.chars.forEach((char, index) => {
-		$(char).css('font-weight', (index + 1) * 0.1 * 800);
+		text.chars.forEach((char, index) => {
+			$(char).css('font-weight', (index + 1) * 0.1 * 800);
 
-		$(char).on('mouseover', function () {
-			animate(index);
+			$(char).on('mouseover', function () {
+				animate(index);
+			});
 		});
-	});
 
-	function calculate(index, length) {
-		const positions = Array.from(Array(length).keys());
-		const left = positions.slice(0, index - 1);
-		const right = positions.slice(index);
-		return { left, right };
-	}
+		function calculate(index, length) {
+			const positions = Array.from(Array(length).keys());
+			const left = positions.slice(0, index - 1);
+			const right = positions.slice(index);
+			return { left, right };
+		}
 
-	function weightByIndex(index) {
-		return (index + 1) * 90;
-	}
+		function weightByIndex(index) {
+			return (index + 1) * 90;
+		}
 
-	function animate(index) {
-		const { left, right } = calculate(index + 1, length);
+		function animate(index) {
+			const { left, right } = calculate(index + 1, length);
 
-		tl.to(text.chars[index], {
-			fontWeight: weightByIndex(0),
-		}, "way");
-
-		text.chars.slice(0, index - 1).reverse().forEach((char, i) => {
-			tl.to(char, {
-				fontWeight: weightByIndex(i),
+			tl.to(text.chars[index], {
+				fontWeight: weightByIndex(0),
 			}, "way");
-		});
 
-		text.chars.slice(index).forEach((char, i) => {
-			tl.to(char, {
-				fontWeight: weightByIndex(i),
-			}, "way");
-		});
+			text.chars.slice(0, index - 1).reverse().forEach((char, i) => {
+				tl.to(char, {
+					fontWeight: weightByIndex(i),
+				}, "way");
+			});
+
+			text.chars.slice(index).forEach((char, i) => {
+				tl.to(char, {
+					fontWeight: weightByIndex(i),
+				}, "way");
+			});
+		}
 	}
 
 
 	// 42. Portfolio Person img moving
 	const img = document.getElementById("pp-hero-person-move");
 
-	if (img) {
+	if (img && !isTouchDevice) {
+		let rafPending = false;
 		document.addEventListener("mousemove", (e) => {
-
-			let x = (window.innerWidth / 2 - e.clientX) / 25;
-			let y = (window.innerHeight / 2 - e.clientY) / 25;
-
-			img.style.transform = `translate(${x}px, ${y}px)`;
-		});
+			if (!rafPending) {
+				rafPending = true;
+				requestAnimationFrame(() => {
+					let x = (window.innerWidth / 2 - e.clientX) / 25;
+					let y = Math.max(0, (window.innerHeight / 2 - e.clientY) / 30);
+					img.style.transform = `translate(${x}px, ${y}px)`;
+					rafPending = false;
+				});
+			}
+		}, { passive: true });
 	}
 
 
@@ -976,21 +1020,108 @@
 
 	window.addEventListener("resize", handleDataSpeedAttr);
 
+	function dismissPreloader() {
+		const $preloader = $("#preloader");
+		if ($preloader.is(":visible")) {
+			$preloader.fadeOut(350);
+			moving_text();
+		}
+	}
+
 	$(function () {
 		tp_text_invert();
 		tp_text_invert_2();
 		tp_text_invert_3();
+
+		const heroImg = document.getElementById("pp-hero-person-move");
+		if (heroImg && heroImg.complete) {
+			dismissPreloader();
+		} else if (heroImg) {
+			heroImg.addEventListener("load", dismissPreloader);
+			setTimeout(dismissPreloader, 700);
+		} else {
+			dismissPreloader();
+		}
 	});
 
 	windowOn.on('load', function () {
-		$("#preloader").fadeOut(500);
-		moving_text();
+		dismissPreloader();
 	});
 
+	// 42. Contact Form AJAX Submission (FormSubmit to syedkhubaibshah@icloud.com)
+	const contactForm = document.getElementById('contact-form');
+	if (contactForm) {
+		contactForm.addEventListener('submit', function (e) {
+			const form = this;
+			const submitBtn = form.querySelector('button[type="submit"]');
+			const responseBox = form.querySelector('.ajax-response');
+			const btnText = submitBtn ? submitBtn.querySelector('.text-1') : null;
+			const originalText = btnText ? btnText.textContent : 'Send Message';
 
+			// FormSubmit and form APIs require HTTP/HTTPS protocol
+			if (window.location.protocol === 'file:') {
+				e.preventDefault();
+				if (responseBox) {
+					responseBox.className = 'ajax-response error';
+					responseBox.textContent = 'Notice: Form services require a web server (e.g. VS Code Live Server, http://localhost, or your live hosted website). Form submission cannot run from a local file:// URL.';
+					responseBox.style.display = 'block';
+				}
+				return;
+			}
 
+			e.preventDefault();
 
+			if (submitBtn) submitBtn.disabled = true;
+			if (btnText) btnText.textContent = 'Sending...';
+			if (responseBox) {
+				responseBox.className = 'ajax-response';
+				responseBox.style.display = 'none';
+				responseBox.textContent = '';
+			}
 
+			const formData = new FormData(form);
+			const data = {};
+			formData.forEach((value, key) => (data[key] = value));
 
+			fetch('https://formsubmit.co/ajax/syedkhubaibshah@icloud.com', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+					'Accept': 'application/json'
+				},
+				body: JSON.stringify(data)
+			})
+				.then(response => response.json())
+				.then(result => {
+					if (result.success === 'true' || result.success === true) {
+						if (responseBox) {
+							responseBox.className = 'ajax-response success';
+							responseBox.textContent = 'Thank you! Your message has been sent successfully. I will get back to you soon.';
+							responseBox.style.display = 'block';
+						}
+						form.reset();
+					} else if (result.message && result.message.toLowerCase().includes('activat')) {
+						if (responseBox) {
+							responseBox.className = 'ajax-response success';
+							responseBox.textContent = 'Action Required: FormSubmit has sent an "Activate Form" link to syedkhubaibshah@icloud.com. Open your inbox and click it once to start receiving messages!';
+							responseBox.style.display = 'block';
+						}
+					} else {
+						throw new Error(result.message || 'Submission failed');
+					}
+				})
+				.catch(err => {
+					if (responseBox) {
+						responseBox.className = 'ajax-response error';
+						responseBox.textContent = err.message || 'Oops! Failed to send. Please email me directly at syedkhubaibshah@icloud.com';
+						responseBox.style.display = 'block';
+					}
+				})
+				.finally(() => {
+					if (submitBtn) submitBtn.disabled = false;
+					if (btnText) btnText.textContent = originalText;
+				});
+		});
+	}
 
 })(jQuery);
