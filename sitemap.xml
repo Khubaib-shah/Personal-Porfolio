@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+
+  <!-- Homepage / Main Portfolio Page -->
+  <url>
+    <loc>https://thekhubaib.me/</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/hero/hero-person.png</image:loc>
+      <image:title>Khubaib Shah - Freelance Full Stack Software Engineer and AI Developer</image:title>
+      <image:caption>Hire Khubaib Shah for custom software development, AI application engineering, SaaS platforms, ERP systems, and codebase rescue services worldwide.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/logo/logo-white.png</image:loc>
+      <image:title>Khubaib Shah Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/portfolio/applyos.webp</image:loc>
+      <image:title>ApplyOs - AI-Powered Job Application Engine by Khubaib Shah</image:title>
+      <image:caption>AI job application system generating ATS-tailored resumes using Google Gemini and Stripe monetization.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/portfolio/azfood.webp</image:loc>
+      <image:title>KS Ordering Management - Multi-Tenant Restaurant Platform by Khubaib Shah</image:title>
+      <image:caption>White-label restaurant platform for online ordering, POS, multi-branch operations, and kitchen workflows.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/portfolio/gymflow.webp</image:loc>
+      <image:title>GymFlow - Multi-Tenant SaaS Platform by Khubaib Shah</image:title>
+      <image:caption>B2B multi-tenant SaaS platform for fitness centers with Stripe subscription billing and automated attendance.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/portfolio/triptrails.webp</image:loc>
+      <image:title>TripTrails - Travel ERP and Double-Entry Accounting Platform by Khubaib Shah</image:title>
+      <image:caption>Enterprise travel ERP with automated double-entry general ledger, 42 Prisma models, and multi-branch operations.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/portfolio/electrobiz.webp</image:loc>
+      <image:title>ElectroBiz - POS and Installment Management ERP by Khubaib Shah</image:title>
+      <image:caption>Commercial POS and installment management ERP for retail with bilingual receipt printing.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/portfolio/munshi.webp</image:loc>
+      <image:title>Munshi - Wholesale CRM and Distribution ERP by Khubaib Shah</image:title>
+      <image:caption>B2B wholesale inventory distribution hub with real-time SKU tracking and dealer credit limits.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/portfolio/studiobook.webp</image:loc>
+      <image:title>Studio Book - Wedding and Event Studio CRM by Khubaib Shah</image:title>
+      <image:caption>Wedding studio operations platform with milestone billing and crew scheduling.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/portfolio/feeva.webp</image:loc>
+      <image:title>Feeva - School Management System by Khubaib Shah</image:title>
+      <image:caption>Comprehensive school management system with student tracking, attendance, and fee analytics.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/portfolio/solebazaar.webp</image:loc>
+      <image:title>SoleBazaar - Scalable eCommerce Platform by Khubaib Shah</image:title>
+      <image:caption>Footwear e-commerce platform with product inventory, cart workflows, and order lifecycle management.</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Privacy Policy Page -->
+  <url>
+    <loc>https://thekhubaib.me/privacy-policy.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+  <!-- Terms and Conditions Page -->
+  <url>
+    <loc>https://thekhubaib.me/terms-conditions.html</loc>
+    <lastmod>2026-11-10</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.3</priority>
+  </url>
+
+</urlset>
+

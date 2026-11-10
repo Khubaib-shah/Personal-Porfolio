@@ -1,0 +1,12 @@
+# robots.txt for https://thekhubaib.me/
+# Khubaib Shah - Freelance Full Stack Software Engineer & AI Developer
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://thekhubaib.me/sitemap.xml
+
+# Crawl-delay (optional, for polite crawling)
+Crawl-delay: 1
+
