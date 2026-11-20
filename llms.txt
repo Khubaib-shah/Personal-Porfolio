@@ -1,0 +1,36 @@
+# Khubaib Shah - Freelance Full Stack Software Engineer & AI Developer
+
+> Portfolio and consulting services of Syed Khubaib Shah (thekhubaib), senior full stack engineer and AI developer based in Karachi, Pakistan, serving clients worldwide.
+
+## Summary
+Khubaib Shah builds enterprise custom software, B2B SaaS platforms, enterprise ERPs with double entry accounting, and production AI applications using Next.js 16, React 19, TypeScript, Node.js, PostgreSQL, and Prisma ORM. Available for freelance projects, code rescue, performance optimization, and architectural consulting.
+
+## Primary Services
+- **Custom Software & Web Application Development**: Production web apps, responsive dashboards, and full stack systems built with Next.js 16, TypeScript, and PostgreSQL.
+- **AI Web Application Development & Rescue**: AI native products, OpenAI, Google Gemini, and Claude API integrations, prompt engineering, RAG pipelines, and fixing broken AI prototypes.
+- **B2B SaaS Platforms & Enterprise ERP Systems**: Multi tenant architectures, double entry general ledger accounting, inventory control, and multi branch workflows.
+- **Codebase Rescue & Bug Fixing**: Rapid diagnosis and resolution of database deadlocks, slow SQL queries, Next.js hydration bugs, and WebSocket real time sync issues.
+- **Ecommerce & Ordering Systems**: Real time pizza and restaurant ordering platforms, custom retail shops with Stripe and PayPal payments, and Socket.IO live sync.
+- **Retail POS & Installments Software**: Point of Sale applications with installment risk calculation, aging reports, CNIC verification, and thermal receipt printing.
+
+## Featured Projects
+- [ApplyOs](https://apply-os-demo.vercel.app/): AI powered job application engine generating ATS tailored resumes and cover letters using Google Gemini and Stripe monetization.
+- [KS Ordering Management](https://azfoodcorner.com/): Multi-tenant restaurant ordering and real-time kitchen POS platform with live order dispatch.
+- [GymFlow SaaS](https://gymflow-management.vercel.app/): B2B multi-tenant fitness center management platform with automated attendance and Stripe subscriptions.
+- [3Uqab Luxury Perfume Platform](https://auqab-perfume.vercel.app/): Full-stack luxury fragrance e-commerce boutique & merchant operations platform with unlimited product listings, dedicated dashboard for incoming orders, order lifecycle management, promotional campaigns, voucher codes, and direct customer WhatsApp CRM marketing. (GitHub: https://github.com/Khubaib-shah/3Auqab-Perfume)
+- [Al-Madina Poultry ERP](https://checkin.thekhubaib.me/): Enterprise mobile-first Progressive Web App (PWA) for live poultry procurement, truck-to-batch landed-cost accounting, FIFO bird lot inventory, counter & wholesale billing, dealer ledgers, and real-time Profit & Loss reporting. (GitHub: https://github.com/Khubaib-shah/Poultry-Farm-Management)
+- [Munshi Wholesale CRM](https://munshe.netlify.app/): B2B wholesale distribution and warehouse inventory management with SKU tracking and customer ledger balancing.
+- [Sick Day VI (Chhutti 6)](https://gtavi.thekhubaib.me/): Full-stack AI sick leave and GTA 6 launch day excuse generator for WhatsApp, Email, and Telegram with Hinglish & Professional zero-gaming-leak modes, 288-template JSON pool, Google Gemini API rewriting, and downloadable Canvas PNG postcards. (GitHub: https://github.com/Khubaib-shah/GTA-6-Excuse-Generator)
+- [TripTrails ERP](https://trip-trails-crm.vercel.app/): Travel ERP with double entry general ledger accounting and 42 relational models.
+- [Studio Book CRM](https://studio-book-demo.vercel.app/): Wedding studio pipeline and milestone billing CRM.
+- [ElectroBiz POS](https://electrobiz.netlify.app/): Commercial retail POS with installment tracking and bilingual receipts.
+- [Feeva](https://feeva.vercel.app/): Multi branch school management system with fee analytics.
+
+## Contact Information
+- Website: https://thekhubaib.me/
+- Email: syedkhubaibshah@icloud.com
+- Telephone / WhatsApp: +92 314 9784156
+- LinkedIn: https://linkedin.com/in/khubaib-shah
+- GitHub: https://github.com/Khubaib-shah
+- Tiktok: https://tiktok.com/@thekhubaib.me
+- Instagram: https://instagram.com/thekhubaib.me

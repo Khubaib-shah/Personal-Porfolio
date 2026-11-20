@@ -227,6 +227,72 @@
           {
             "@type": "SoftwareApplication",
             "position": 1,
+            "name": "ApplyOs - AI Job Application Engine",
+            "applicationCategory": "WebApplication",
+            "operatingSystem": "Web",
+            "url": "https://apply-os-demo.vercel.app/",
+            "description": "AI-powered job application system generating ATS-tailored resumes and cover letters using Google Gemini and Stripe monetization."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 2,
+            "name": "KS Ordering Management Platform",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web, Cloud",
+            "url": "https://azfoodcorner.com/",
+            "description": "Multi-tenant restaurant management platform for online ordering, real-time POS, multi-branch kitchen workflows, and customer dispatch."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 3,
+            "name": "GymFlow Multi-Tenant SaaS Platform",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web, Cloud",
+            "url": "https://gymflow-management.vercel.app",
+            "description": "B2B multi-tenant SaaS platform for fitness centers with automated attendance, member management, and Stripe subscription billing."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 4,
+            "name": "3Uqab Luxury Perfume E-Commerce & Operations Platform",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web, Cloud",
+            "url": "https://auqab-perfume.vercel.app/",
+            "description": "Full-stack luxury perfume e-commerce boutique and merchant management platform featuring unlimited product listings, dedicated dashboard for incoming orders and order lifecycle management, dynamic campaigns, vouchers, and direct WhatsApp CRM marketing fulfillment."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 2,
+            "position": 5,
+            "name": "Al-Madina Poultry - Farm & Shop ERP Management System",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web, Mobile, PWA",
+            "url": "https://checkin.thekhubaib.me/",
+            "description": "Enterprise-grade mobile-first Progressive Web App (PWA) for live poultry procurement, truck-to-batch landed-cost accounting, FIFO bird lot inventory, counter & wholesale billing, dealer ledgers, and real-time Profit & Loss reporting."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 3,
+            "position": 6,
+            "name": "Munshi Wholesale CRM & Distribution ERP",
+            "applicationCategory": "BusinessApplication",
+            "operatingSystem": "Web",
+            "url": "https://munshe.netlify.app",
+            "description": "B2B wholesale inventory and distribution hub featuring multi-shelf warehouse stocking, real-time SKU tracking, dealer credit limits, and customer ledger balancing."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 7,
+            "name": "Sick Day VI (Chhutti 6) - GTA 6 Hinglish Excuse Generator",
+            "applicationCategory": "WebApplication",
+            "operatingSystem": "Web, Cloud",
+            "url": "https://gtavi.thekhubaib.me/",
+            "description": "Full-stack AI sick leave and GTA 6 launch day excuse generator for WhatsApp, Email, and Telegram with Hinglish & Professional zero-gaming-leak modes, 288-template JSON pool, Google Gemini API rewriting, and downloadable Canvas PNG postcards."
+          },
+          {
+            "@type": "SoftwareApplication",
+            "position": 4,
+            "position": 8,
             "name": "TripTrails Travel ERP & Accounting Platform",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web, Cloud",
@@ -254,6 +320,7 @@
           {
             "@type": "SoftwareApplication",
             "position": 4,
+            "position": 9,
             "name": "Studio Book CRM",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web",
@@ -264,6 +331,8 @@
             "@type": "SoftwareApplication",
             "position": 5,
             "name": "GymFlow Multi-Tenant SaaS Platform",
+            "position": 10,
+            "name": "ElectroBiz POS & Installments ERP",
             "applicationCategory": "BusinessApplication",
             "operatingSystem": "Web, Cloud",
             "url": "https://gymflow-management.vercel.app",
@@ -277,6 +346,9 @@
             "operatingSystem": "Web",
             "url": "https://apply-os-demo.vercel.app/",
             "description": "AI-powered job application system generating ATS-tailored resumes and cover letters using Google Gemini and Stripe monetization."
+            "operatingSystem": "Web, Desktop",
+            "url": "https://electrobiz.netlify.app/",
+            "description": "Commercial POS and installment management ERP for retail showrooms with CNIC verification, automated payment schedules, overdue aging reports, and bilingual Urdu/English receipt printing."
           }
         ]
       },
@@ -343,10 +415,30 @@
   <link rel="icon" type="image/png" sizes="16x16" href="assets/img/favicon/favicon-16x16.png" />
   <link rel="apple-touch-icon" sizes="180x180" href="assets/img/favicon/apple-touch-icon.png" />
   <link rel="manifest" href="assets/img/favicon/site.webmanifest" />
+
+  <!-- Preconnect to Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <!-- Preload Critical Above-The-Fold Hero Assets -->
+  <link rel="preload" as="image" href="assets/img/hero/hero-bg.png" fetchpriority="high" />
   <link rel="preload" as="image" href="assets/img/hero/hero-person.webp" fetchpriority="high" type="image/webp" />
+
+  <!-- Google Fonts: Inter & Teko non-render-blocking with display=swap -->
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Teko:wght@500;600;700&display=swap"
+    media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Teko:wght@500;600;700&display=swap" />
+  </noscript>
+
   <!-- CSS here start-->
   <link rel="stylesheet" href="assets/css/bootstrap.css" />
-  <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+  <link rel="stylesheet" href="assets/css/swiper-bundle.css" media="print" onload="this.media='all'" />
+  <noscript>
+    <link rel="stylesheet" href="assets/css/swiper-bundle.css" />
+  </noscript>
   <link rel="stylesheet" href="assets/css/font-awesome-pro.css" media="print" onload="this.media='all'" />
   <noscript>
     <link rel="stylesheet" href="assets/css/font-awesome-pro.css" />
@@ -367,8 +459,10 @@
         <div class="tp-offcanvas-2-left-wrap d-flex justify-content-between align-items-center">
           <div class="tp-offcanvas-2-logo">
             <a href="index.html">
-              <img class="logo-1" data-width="60" src="assets/img/logo/logo-white.png" alt="" />
-              <img class="logo-2" data-width="92" src="assets/img/logo/logo-black.png" alt="" />
+              <img class="logo-1" data-width="60" src="assets/img/logo/logo-white.png" alt="Khubaib Shah Logo"
+                width="60" height="13" style="width: 60px; height: auto;" />
+              <img class="logo-2" data-width="92" src="assets/img/logo/logo-black.png" alt="Khubaib Shah Logo"
+                width="92" height="21" style="width: 92px; height: auto;" />
             </a>
           </div>
           <div class="tp-offcanvas-2-close d-md-none text-end">
@@ -493,7 +587,8 @@
           <div class="col-4">
             <div class="tp-header-logo">
               <a href="/">
-                <img data-width="60" src="assets/img/logo/logo-white.png" alt="header-logo" />
+                <img data-width="60" src="assets/img/logo/logo-white.png" alt="Khubaib Shah Logo" width="60" height="13"
+                  style="width: 60px; height: auto;" />
               </a>
             </div>
           </div>
@@ -634,14 +729,14 @@
 
             <div class="pp-hero-title-box d-flex justify-content-center align-items-end p-relative"
               style="bottom: 0; left: 0; width: 100%; z-index: 1;">
-              <h2 class="pp-hero-title pp-hero-title-fill tp-char-animation">
+              <h2 class="pp-hero-title pp-hero-title-fill tp-char-animation" aria-label="Khubaib Shah">
                 Khubaib <br />
                 Shah
               </h2>
               <img id="pp-hero-person-move" class="pp-hero-person tp_fade_anim" data-delay="0.5"
                 src="assets/img/hero/hero-person.webp" alt="Khubaib Shah - Freelance Full Stack Web Developer"
                 fetchpriority="high" decoding="async" style="width: 70%; max-width: 900px; height: auto;" />
-              <h2 class="pp-hero-title pp-hero-title-stroke tp-char-animation">
+              <h2 class="pp-hero-title pp-hero-title-stroke tp-char-animation" aria-hidden="true">
                 Khubaib <br />
                 Shah
               </h2>
@@ -731,14 +826,14 @@
                     style="color: rgba(255,255,255,0.78); line-height: 1.6; font-size: 20px;">
                     Need a <strong>custom app or website built from scratch</strong>? Want a
                     <strong>big business system</strong> for sales, billing, or accounts that just works? Or is your
-                    <strong>AI-powered app broken or too slow</strong> when lots of people use it? I can help. I fix
+                    <strong>AI powered app broken or too slow</strong> when lots of people use it? I can help. I fix
                     hard tech problems with simple, tidy code, and I do it fast.
                   </p>
                 </div>
               </div>
             </div>
 
-            <!-- Who Is Khubaib Shah — SEO-Rich About Bio -->
+            <!-- Who Is Khubaib Shah: SEO Rich About Bio -->
             <div class="row mt-80">
               <div class="col-lg-12">
                 <h2 class="pp-section-title tp_text_invert_2 mb-30 tp_fade_anim" style="font-size: 48px;">
@@ -750,16 +845,16 @@
                   <p style="color: rgba(255,255,255,0.78); line-height: 1.8; font-size: 18px; margin-bottom: 20px;">
                     <strong>Khubaib Shah</strong> (also known as <strong>Syed Khubaib Shah</strong>) is a
                     <strong>freelance full stack software engineer</strong> and <strong>AI web application
-                    developer</strong> based in <strong>Karachi, Pakistan</strong>, available for hire worldwide.
-                    With over <strong>2 years of hands-on production experience</strong> and <strong>24+ successfully
-                    delivered projects</strong> across 86+ clients, Khubaib specializes in building
-                    <strong>enterprise-grade custom software</strong> that businesses rely on daily.
+                      developer</strong> based in <strong>Karachi, Pakistan</strong>, available for hire worldwide.
+                    With over <strong>2 years of hands on production experience</strong> and <strong>24+ successfully
+                      delivered projects</strong> across 86+ clients, Khubaib specializes in building
+                    <strong>enterprise grade custom software</strong> that businesses rely on daily.
                   </p>
                   <p style="color: rgba(255,255,255,0.78); line-height: 1.8; font-size: 18px; margin-bottom: 20px;">
-                    Whether you're a startup founder looking to <strong>build your MVP from scratch</strong>, a
+                    Whether you are a startup founder looking to <strong>build your MVP from scratch</strong>, a
                     growing company that needs a <strong>custom SaaS platform</strong> or <strong>ERP system</strong>,
-                    or a team stuck with a <strong>broken AI application</strong> that won't scale — Khubaib is the
-                    developer clients call when <strong>other freelancers can't solve the problem</strong>.
+                    or a team stuck with a <strong>broken AI application</strong> that will not scale, Khubaib is the
+                    developer clients call when <strong>other freelancers cannot solve the problem</strong>.
                   </p>
                 </div>
               </div>
@@ -767,15 +862,15 @@
                 <div class="tp_fade_anim" data-delay="0.2">
                   <p style="color: rgba(255,255,255,0.78); line-height: 1.8; font-size: 18px; margin-bottom: 20px;">
                     His core stack includes <strong>Next.js 16, React 19, TypeScript, Node.js, Express.js,
-                    PostgreSQL, Prisma ORM, and Tailwind CSS</strong>. He also brings deep expertise in
+                      PostgreSQL, Prisma ORM, and Tailwind CSS</strong>. He also brings deep expertise in
                     <strong>AI application development</strong> using <strong>OpenAI, Google Gemini, and Claude
-                    APIs</strong>, as well as domain-specialized skills in <strong>double-entry accounting systems,
-                    multi-tenant B2B SaaS architecture</strong>, and <strong>real-time systems with
-                    Socket.IO</strong>.
+                      APIs</strong>, as well as specialized domain skills in <strong>double entry accounting systems,
+                      multi tenant B2B SaaS architecture</strong>, and <strong>real time systems with
+                      Socket.IO</strong>.
                   </p>
                   <p style="color: rgba(255,255,255,0.78); line-height: 1.8; font-size: 18px; margin-bottom: 20px;">
                     Khubaib has worked professionally at <strong>Fossphorus LLC</strong> as a Frontend Engineer and at
-                    <strong>BNGlab</strong> as a Software Developer — building production applications for clients
+                    <strong>BNGlab</strong> as a Software Developer, building production applications for clients
                     across the <strong>USA, UK, UAE, Germany, Italy, and Pakistan</strong>. He delivers directly with
                     <strong>zero agency overhead</strong>, daily Git commits, and transparent milestone tracking.
                   </p>
@@ -790,8 +885,9 @@
         <!-- ========== Banner Start ========== -->
         <div class="tp-banner-area pp-banner-style scale-up-img w-100" style="width: 100%; max-width: 100%;">
           <div class="tp-banner-img w-100" style="width: 100%; max-width: 100%;">
-            <img class="img-cover scale-up w-100" data-speed=".8" src="assets/img/banner/banner-1.webp" alt=""
-              loading="lazy" decoding="async" style="width: 100%; max-width: 100%; object-fit: cover;" />
+            <img class="img-cover scale-up w-100" data-speed=".8" src="assets/img/banner/banner-1.webp"
+              alt="Khubaib Shah Software Engineer Portfolio Banner" width="1672" height="941" loading="lazy"
+              decoding="async" style="width: 100%; max-width: 100%; object-fit: cover;" />
           </div>
         </div>
         <!-- ========== Banner End ========== -->
@@ -811,11 +907,10 @@
               </h2>
               <div class="row">
                 <div class="col-lg-10">
-                  <p class="tp_fade_anim"
-                    style="color: rgba(255,255,255,0.78); line-height: 1.7; font-size: 19px;">
-                    As a <strong>freelance software engineer available for hire</strong>, I offer end-to-end
+                  <p class="tp_fade_anim" style="color: rgba(255,255,255,0.78); line-height: 1.7; font-size: 19px;">
+                    As a <strong>freelance software engineer available for hire</strong>, I offer complete
                     development services that cover every stage from initial architecture to production deployment.
-                    Here's how I help businesses, startups, and engineering teams across the world:
+                    Here is how I help businesses, startups, and engineering teams across the world:
                   </p>
                 </div>
               </div>
@@ -825,16 +920,29 @@
               <!-- Service 1: Custom Software Development -->
               <div class="col-lg-6 mb-50">
                 <div class="tp_fade_anim" data-delay="0.1">
-                  <h3 style="color: #FFF669; font-size: 26px; margin-bottom: 15px; font-weight: 600;">
-                    🛠️ Custom Software &amp; Web Application Development
+                  <h3 class="d-flex align-items-center"
+                    style="color: #FFF669; font-size: 26px; margin-bottom: 15px; font-weight: 600; gap: 14px;">
+                    <span class="d-inline-flex align-items-center justify-content-center"
+                      style="width: 44px; height: 44px; border-radius: 10px; background: rgba(255, 246, 105, 0.12); border: 1px solid rgba(255, 246, 105, 0.3); flex-shrink: 0;">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M8 9L4 12L8 15" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M16 9L20 12L16 15" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M14 4L10 20" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span>Custom Software &amp; Web Application Development</span>
                   </h3>
                   <p style="color: rgba(255,255,255,0.78); line-height: 1.7; font-size: 17px;">
                     I build <strong>custom web applications from scratch</strong> using modern technologies like
                     <strong>Next.js 16, React 19, TypeScript, and PostgreSQL</strong>. Whether you need a
-                    <strong>customer-facing web app</strong>, an <strong>internal business dashboard</strong>, or a
-                    <strong>full-featured SaaS product</strong> with authentication, billing, and multi-tenancy — I
-                    architect and deliver production-ready software that scales. Every project includes responsive
-                    design, SEO optimization, and clean code that's easy to maintain.
+                    <strong>customer facing web app</strong>, an <strong>internal business dashboard</strong>, or a
+                    <strong>full featured SaaS product</strong> with authentication, billing, and multi tenancy, I
+                    architect and deliver production ready software that scales. Every project includes responsive
+                    design, SEO optimization, and clean code that is easy to maintain.
                   </p>
                 </div>
               </div>
@@ -842,15 +950,26 @@
               <!-- Service 2: AI Application Development -->
               <div class="col-lg-6 mb-50">
                 <div class="tp_fade_anim" data-delay="0.2">
-                  <h3 style="color: #FFF669; font-size: 26px; margin-bottom: 15px; font-weight: 600;">
-                    🤖 AI Web Application Development &amp; Integration
+                  <h3 class="d-flex align-items-center"
+                    style="color: #FFF669; font-size: 26px; margin-bottom: 15px; font-weight: 600; gap: 14px;">
+                    <span class="d-inline-flex align-items-center justify-content-center"
+                      style="width: 44px; height: 44px; border-radius: 10px; background: rgba(255, 246, 105, 0.12); border: 1px solid rgba(255, 246, 105, 0.3); flex-shrink: 0;">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <rect x="7" y="7" width="10" height="10" rx="2" stroke="#FFF669" stroke-width="2" />
+                        <path d="M10 10H14V14H10V10Z" fill="#FFF669" />
+                        <path d="M9 3V7M15 3V7M9 17V21M15 17V21M3 9H7M3 15H7M17 9H21M17 15H21" stroke="#FFF669"
+                          stroke-width="2" stroke-linecap="round" />
+                      </svg>
+                    </span>
+                    <span>AI Web Application Development &amp; Integration</span>
                   </h3>
                   <p style="color: rgba(255,255,255,0.78); line-height: 1.7; font-size: 17px;">
-                    Need to <strong>build an AI-powered application</strong> or integrate <strong>OpenAI, Google
-                    Gemini, or Claude APIs</strong> into your product? I develop <strong>AI-native web
-                    applications</strong> with intelligent features like automated resume generation, smart content
-                    creation, context-aware chatbots, and AI-driven workflows. I also <strong>rescue stuck AI
-                    projects</strong> — fixing latency issues, prompt engineering problems, API rate limits, and
+                    Need to <strong>build an AI powered application</strong> or integrate <strong>OpenAI, Google
+                      Gemini, or Claude APIs</strong> into your product? I develop <strong>AI native web
+                      applications</strong> with intelligent features like automated resume generation, smart content
+                    creation, context aware chatbots, and AI driven workflows. I also <strong>rescue stuck AI
+                      projects</strong> by fixing latency issues, prompt engineering problems, API rate limits, and
                     scaling bottlenecks.
                   </p>
                 </div>
@@ -859,15 +978,28 @@
               <!-- Service 3: SaaS & ERP -->
               <div class="col-lg-6 mb-50">
                 <div class="tp_fade_anim" data-delay="0.3">
-                  <h3 style="color: #FFF669; font-size: 26px; margin-bottom: 15px; font-weight: 600;">
-                    🏢 B2B SaaS Platforms &amp; Enterprise ERP Systems
+                  <h3 class="d-flex align-items-center"
+                    style="color: #FFF669; font-size: 26px; margin-bottom: 15px; font-weight: 600; gap: 14px;">
+                    <span class="d-inline-flex align-items-center justify-content-center"
+                      style="width: 44px; height: 44px; border-radius: 10px; background: rgba(255, 246, 105, 0.12); border: 1px solid rgba(255, 246, 105, 0.3); flex-shrink: 0;">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M12 3L3 8L12 13L21 8L12 3Z" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M3 12.5L12 17.5L21 12.5" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M3 17L12 22L21 17" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span>B2B SaaS Platforms &amp; Enterprise ERP Systems</span>
                   </h3>
                   <p style="color: rgba(255,255,255,0.78); line-height: 1.7; font-size: 17px;">
-                    I specialize in building <strong>multi-tenant B2B SaaS platforms</strong> and
+                    I specialize in building <strong>multi tenant B2B SaaS platforms</strong> and
                     <strong>enterprise ERP systems</strong> with complex business logic. My ERPs feature
-                    <strong>automated double-entry general ledger accounting</strong>, multi-branch operations,
-                    inventory management, and financial reporting. I've built production ERPs for travel agencies,
-                    wholesale distributors, retail showrooms, schools, and fitness centers — each handling real
+                    <strong>automated double entry general ledger accounting</strong>, multi branch operations,
+                    inventory management, and financial reporting. I have built production ERPs for travel agencies,
+                    wholesale distributors, retail showrooms, schools, and fitness centers, each handling real
                     money and real transactions daily.
                   </p>
                 </div>
@@ -876,31 +1008,57 @@
               <!-- Service 4: Bug Fixing & Problem Solving -->
               <div class="col-lg-6 mb-50">
                 <div class="tp_fade_anim" data-delay="0.4">
-                  <h3 style="color: #FFF669; font-size: 26px; margin-bottom: 15px; font-weight: 600;">
-                    🔧 Codebase Rescue, Bug Fixing &amp; Performance Optimization
+                  <h3 class="d-flex align-items-center"
+                    style="color: #FFF669; font-size: 26px; margin-bottom: 15px; font-weight: 600; gap: 14px;">
+                    <span class="d-inline-flex align-items-center justify-content-center"
+                      style="width: 44px; height: 44px; border-radius: 10px; background: rgba(255, 246, 105, 0.12); border: 1px solid rgba(255, 246, 105, 0.3); flex-shrink: 0;">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                          d="M14.7 6.3A1 1 0 0 0 14.7 7.7L16.3 9.3A1 1 0 0 0 17.7 9.3L21.47 5.53A6 6 0 0 1 13.53 13.47L6.62 20.38A2.12 2.12 0 0 1 3.62 17.38L10.53 10.47A6 6 0 0 1 18.47 2.53L14.7 6.3Z"
+                          stroke="#FFF669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span>Codebase Rescue, Bug Fixing &amp; Performance Optimization</span>
                   </h3>
                   <p style="color: rgba(255,255,255,0.78); line-height: 1.7; font-size: 17px;">
-                    Is your application <strong>crashing, slow, or stuck in production</strong>? I'm frequently
+                    Is your application <strong>crashing, slow, or stuck in production</strong>? I am frequently
                     hired as a <strong>software problem solver</strong> to diagnose and fix issues other developers
-                    can't. From <strong>database deadlocks and slow SQL queries</strong> to <strong>Next.js
-                    hydration errors, broken WebSocket connections, and failing Stripe/PayPal webhooks</strong> — I
-                    find the root cause and fix it fast. I also do <strong>website performance optimization</strong>,
-                    having reduced load times by over 90% on production portfolios.
+                    cannot. From <strong>database deadlocks and slow SQL queries</strong> to <strong>Next.js
+                      hydration errors, broken WebSocket connections, and failing Stripe or PayPal webhooks</strong>, I
+                    find the root cause and fix it fast. I also specialize in <strong>website performance
+                      optimization</strong>,
+                    having reduced load times by over 90% on production sites.
                   </p>
                 </div>
               </div>
 
-              <!-- Service 5: E-commerce -->
+              <!-- Service 5: Ecommerce -->
               <div class="col-lg-6 mb-50">
                 <div class="tp_fade_anim" data-delay="0.5">
-                  <h3 style="color: #FFF669; font-size: 26px; margin-bottom: 15px; font-weight: 600;">
-                    🛒 E-Commerce &amp; Online Ordering Systems
+                  <h3 class="d-flex align-items-center"
+                    style="color: #FFF669; font-size: 26px; margin-bottom: 15px; font-weight: 600; gap: 14px;">
+                    <span class="d-inline-flex align-items-center justify-content-center"
+                      style="width: 44px; height: 44px; border-radius: 10px; background: rgba(255, 246, 105, 0.12); border: 1px solid rgba(255, 246, 105, 0.3); flex-shrink: 0;">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                          d="M6 2L3 6V20C3 20.5304 3.21071 21.0391 3.58579 21.4142C3.96086 21.7893 4.46957 22 5 22H19C19.5304 22 20.0391 21.7893 20.4142 21.4142C20.7893 21.0391 21 20.5304 21 20V6L18 2H6Z"
+                          stroke="#FFF669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M3 6H21" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path
+                          d="M16 10C16 11.0609 15.5786 12.0783 14.8284 12.8284C14.0783 13.5786 13.0609 14 12 14C10.9391 14 9.92172 13.5786 9.17157 12.8284C8.42143 12.0783 8 11.0609 8 10"
+                          stroke="#FFF669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span>Ecommerce &amp; Online Ordering Systems</span>
                   </h3>
                   <p style="color: rgba(255,255,255,0.78); line-height: 1.7; font-size: 17px;">
-                    I develop <strong>custom e-commerce platforms</strong> and <strong>real-time online ordering
-                    systems</strong> for restaurants, retail stores, and product businesses. My solutions include
-                    <strong>Stripe and PayPal payment integration</strong>, real-time order tracking with
-                    <strong>Socket.IO</strong>, admin dashboards, inventory management, and multi-branch support. I've
+                    I develop <strong>custom ecommerce platforms</strong> and <strong>real time online ordering
+                      systems</strong> for restaurants, retail stores, and product businesses. My solutions include
+                    <strong>Stripe and PayPal payment integration</strong>, real time order tracking with
+                    <strong>Socket.IO</strong>, admin dashboards, inventory management, and multi branch support. I have
                     built ordering systems for pizza chains in Italy, coffee shops, shoe stores, and gifting brands.
                   </p>
                 </div>
@@ -909,15 +1067,27 @@
               <!-- Service 6: POS & Installments -->
               <div class="col-lg-6 mb-50">
                 <div class="tp_fade_anim" data-delay="0.6">
-                  <h3 style="color: #FFF669; font-size: 26px; margin-bottom: 15px; font-weight: 600;">
-                    💳 Retail POS &amp; Installment Management Software
+                  <h3 class="d-flex align-items-center"
+                    style="color: #FFF669; font-size: 26px; margin-bottom: 15px; font-weight: 600; gap: 14px;">
+                    <span class="d-inline-flex align-items-center justify-content-center"
+                      style="width: 44px; height: 44px; border-radius: 10px; background: rgba(255, 246, 105, 0.12); border: 1px solid rgba(255, 246, 105, 0.3); flex-shrink: 0;">
+                      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <rect x="2" y="4" width="20" height="16" rx="3" stroke="#FFF669" stroke-width="2" />
+                        <path d="M2 10H22" stroke="#FFF669" stroke-width="2" />
+                        <path d="M6 15H10" stroke="#FFF669" stroke-width="2" stroke-linecap="round" />
+                        <path d="M14 15H16" stroke="#FFF669" stroke-width="2" stroke-linecap="round" />
+                      </svg>
+                    </span>
+                    <span>Retail POS &amp; Installment Management Software</span>
                   </h3>
                   <p style="color: rgba(255,255,255,0.78); line-height: 1.7; font-size: 17px;">
-                    I build <strong>custom Point-of-Sale (POS) systems</strong> for retail businesses with features
+                    I build <strong>custom Point of Sale (POS) systems</strong> for retail businesses with features
                     like <strong>installment scheduling, CNIC verification, automated payment reminders, overdue
-                    aging reports</strong>, and <strong>bilingual thermal receipt printing</strong> (Urdu/English).
+                      aging reports</strong>, and <strong>bilingual thermal receipt printing</strong> (Urdu and
+                    English).
                     My POS solutions handle real daily transactions for electronics showrooms and wholesale
-                    distributors, with offline-first architecture for unreliable network environments.
+                    distributors, with offline first architecture for unreliable network environments.
                   </p>
                 </div>
               </div>
@@ -930,22 +1100,22 @@
         <section id="portfolio" class="pp-portfolio-area pp-portfolio-style pp-portfolio-space pt-200 pb-80"
           data-bg-color="#2F1F19">
           <div class="cr-section-content-wrapper mb-0">
-            <h2 class="pp-section-title fs-500 text-center tp-char-animation">
+            <h2 class="pp-section-title fs-500 text-center tp-char-animation" aria-label="Featured Projects">
               Projects
             </h2>
           </div>
           <div class="pp-portfolio-inner">
             <div class="container-fluid">
               <div class="row gx-30">
-                <!-- ================= ROW 1 (2 ITEMS) ================= -->
-                <!-- 1. Apply Os (AI Engine) [2 of 2] -->
-                <div class="col-xl-6 col-lg-6">
+                <!-- ================= ROW 1 (1 FEATURED ITEM) ================= -->
+                <!-- 1. Apply Os (AI Engine) [1 of 1] -->
+                <div class="col-12">
                   <div class="cr-portfolio-item cr-portfolio-overlay mb-65">
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://apply-os-demo.vercel.app/" target="_blank">
                         <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
                           <img src="assets/img/portfolio/applyos.webp" alt="Apply OS Job Application System"
-                            loading="lazy" decoding="async" />
+                            width="1570" height="641" loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -961,22 +1131,23 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://apply-os-demo.vercel.app/" target="_blank">Next.js</a>
-                        <a href="https://apply-os-demo.vercel.app/" target="_blank">Gemini AI</a>
-                        <a href="https://apply-os-demo.vercel.app/" target="_blank">Stripe</a>
+                        <span>Next.js</span>
+                        <span>Gemini AI</span>
+                        <span>Stripe</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- 2. KS Ordering Management Platform [2 of 2] -->
+                <!-- ================= ROW 2 (2 ITEMS) ================= -->
+                <!-- 2. KS Ordering Management Platform [1 of 2] -->
                 <div class="col-xl-6 col-lg-6">
                   <div class="cr-portfolio-item cr-portfolio-overlay mb-65">
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://azfoodcorner.com/" target="_blank">
                         <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
-                          <img src="assets/img/portfolio/azfood.webp" alt="KS Ordering Management platform"
-                            loading="lazy" decoding="async" />
+                          <img src="assets/img/portfolio/azfood.webp" alt="KS Ordering Management platform" width="1522"
+                            height="644" loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -992,23 +1163,22 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://azfoodcorner.com/" target="_blank">Next.js</a>
-                        <a href="https://azfoodcorner.com/" target="_blank">React</a>
-                        <a href="https://azfoodcorner.com/" target="_blank">PostgreSQL</a>
+                        <span>Next.js</span>
+                        <span>React</span>
+                        <span>PostgreSQL</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- ================= ROW 2 (1 FEATURED ITEM) ================= -->
-                <!-- 3. GymFlow Multi-Tenant SaaS Platform [1 of 1] -->
-                <div class="col-12">
+                <!-- 3. GymFlow Multi-Tenant SaaS Platform [2 of 2] -->
+                <div class="col-xl-6 col-lg-6">
                   <div class="cr-portfolio-item cr-portfolio-overlay mb-65">
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://gymflow-management.vercel.app" target="_blank">
                         <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
                           <img src="assets/img/portfolio/gymflow.webp" alt="GymFlow Multi-Tenant SaaS Platform"
-                            loading="lazy" decoding="async" />
+                            width="1079" height="607" loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -1024,23 +1194,96 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://gymflow-management.vercel.app" target="_blank">Next.js</a>
-                        <a href="https://gymflow-management.vercel.app" target="_blank">TypeScript</a>
-                        <a href="https://gymflow-management.vercel.app" target="_blank">Prisma</a>
+                        <span>Next.js</span>
+                        <span>TypeScript</span>
+                        <span>Prisma</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- ================= ROW 3 (2 ITEMS) ================= -->
-                <!-- 4. Munshi Wholesale CRM & Distribution ERP [1 of 2] -->
+                <!-- ================= ROW 3 (1 FEATURED ITEM) ================= -->
+                <!-- 4. 3Uqab Perfume (Eau de Parfum - Luxury E-Commerce & Merchant Operations) [1 of 1] -->
+                <div class="col-12">
+                  <div class="cr-portfolio-item cr-portfolio-overlay mb-65">
+                    <div class="not-hide-cursor" data-cursor="View<br>Live">
+                      <a class="cursor-hide" href="https://auqab-perfume.vercel.app/" target="_blank"
+                        title="View 3Uqab Perfume Storefront Live">
+                        <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
+                          <img src="assets/img/portfolio/3uqab.jpg"
+                            alt="3Uqab Perfume Luxury Fragrance E-Commerce and Operations Platform" width="1519"
+                            height="832" loading="lazy" decoding="async" />
+                        </div>
+                      </a>
+                    </div>
+                    <div class="cr-portfolio-content-wrap d-md-flex justify-content-between align-items-start">
+                      <div class="cr-portfolio-content">
+                        <h3 class="cr-portfolio-title mb-15">
+                          <a class="tp-line-black" href="https://auqab-perfume.vercel.app/" target="_blank"
+                            title="3Uqab Perfume Live Storefront">3Uqab Perfume (Three Uqab)</a>
+                        </h3>
+                        <p>
+                          Full stack luxury perfume e-commerce boutique &amp; merchant operations platform. Features
+                          unlimited product listings, an interactive olfactory fragrance pyramid (Top, Heart &amp; Base
+                          notes), dedicated merchant dashboard for tracking incoming orders and managing complete order
+                          lifecycles, promotional campaigns, voucher codes, and direct customer WhatsApp CRM marketing
+                          fulfillment.
+                        </p>
+                      </div>
+                      <div class="cr-portfolio-category md-project-category">
+                        <span>Next.js 16</span>
+                        <span>PostgreSQL</span>
+                        <span>Prisma</span>
+                        <span>Zustand</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ================= ROW 4 (2 ITEMS) ================= -->
+                <!-- 5. Al-Madina Poultry Farm ERP [1 of 2] -->
+                <div class="col-xl-6 col-lg-6">
+                  <div class="cr-portfolio-item cr-portfolio-overlay mb-65">
+                    <div class="not-hide-cursor" data-cursor="View<br>Live">
+                      <a class="cursor-hide" href="https://checkin.thekhubaib.me/" target="_blank"
+                        title="View Al-Madina Poultry ERP Live">
+                        <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
+                          <img src="assets/img/portfolio/poultry-farm.jpg"
+                            alt="Al-Madina Poultry Farm and Shop ERP Management System" width="1440" height="900"
+                            loading="lazy" decoding="async" />
+                        </div>
+                      </a>
+                    </div>
+                    <div class="cr-portfolio-content-wrap d-md-flex justify-content-between align-items-start">
+                      <div class="cr-portfolio-content">
+                        <h3 class="cr-portfolio-title mb-15">
+                          <a class="tp-line-black" href="https://checkin.thekhubaib.me/" target="_blank"
+                            title="Al-Madina Poultry ERP Live">Al-Madina Poultry ERP</a>
+                        </h3>
+                        <p>
+                          Enterprise grade mobile-first Progressive Web App (PWA) for live poultry procurement,
+                          truck-to-batch landed-cost accounting, FIFO bird lot inventory tracking, counter &amp;
+                          wholesale billing, dealer ledgers, and real-time Profit &amp; Loss reporting.
+                        </p>
+                      </div>
+                      <div class="cr-portfolio-category md-project-category">
+                        <span>React 19</span>
+                        <span>PostgreSQL</span>
+                        <span>Drizzle ORM</span>
+                        <span>PWA</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- 6. Munshi Wholesale CRM & Distribution ERP [2 of 2] -->
                 <div class="col-xl-6 col-lg-6">
                   <div class="cr-portfolio-item cr-portfolio-overlay mb-65">
                     <div class="not-hide-cursor" data-cursor="View<br>Repo">
-                      <a class="cursor-hide" href="https://munshe.netlify.app"
-                        target="_blank" title="View Munshi Wholesale CRM on GitHub">
+                      <a class="cursor-hide" href="https://munshe.netlify.app" target="_blank"
+                        title="View Munshi Wholesale CRM on GitHub">
                         <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
-                          <img src="assets/img/portfolio/munshi.webp"
+                          <img src="assets/img/portfolio/munshi.webp" width="1577" height="639"
                             alt="Munshi - Wholesale Inventory & Distribution Management System" loading="lazy"
                             decoding="async" />
                         </div>
@@ -1049,8 +1292,8 @@
                     <div class="cr-portfolio-content-wrap d-md-flex justify-content-between align-items-start">
                       <div class="cr-portfolio-content">
                         <h3 class="cr-portfolio-title mb-15">
-                          <a class="tp-line-black" href="https://munshe.netlify.app"
-                            target="_blank" title="Munshi Wholesale CRM">Munshi Wholesale CRM</a>
+                          <a class="tp-line-black" href="https://munshe.netlify.app" target="_blank"
+                            title="Munshi Wholesale CRM">Munshi Wholesale CRM</a>
                         </h3>
                         <p>
                           B2B wholesale inventory and distribution hub featuring multi-shelf warehouse stocking,
@@ -1058,25 +1301,59 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://munshe.netlify.app" target="_blank"
-                          title="Built with TypeScript">TypeScript</a>
-                        <a href="https://munshe.netlify.app" target="_blank"
-                          title="Built with Next.js">Next.js</a>
-                        <a href="https://munshe.netlify.app" target="_blank"
-                          title="Wholesale Distribution">Warehouse ERP</a>
+                        <span>TypeScript</span>
+                        <span>Next.js</span>
+                        <span>Warehouse ERP</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- 5. TripTrails Travel ERP & Double-Entry Accounting [2 of 2] -->
+                <!-- ================= ROW 5 (1 FEATURED ITEM) ================= -->
+                <!-- 7. Sick Day VI (Chhutti 6 - GTA 6 Excuse Generator) [1 of 1] -->
+                <div class="col-12">
+                  <div class="cr-portfolio-item cr-portfolio-overlay mb-65">
+                    <div class="not-hide-cursor" data-cursor="View<br>Live">
+                      <a class="cursor-hide" href="https://gtavi.thekhubaib.me/" target="_blank"
+                        title="View Sick Day VI GTA 6 Excuse Generator Live">
+                        <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
+                          <img src="assets/img/portfolio/gta6-excuse.jpg"
+                            alt="Sick Day VI GTA 6 Hinglish Excuse Generator" width="1440" height="900" loading="lazy"
+                            decoding="async" />
+                        </div>
+                      </a>
+                    </div>
+                    <div class="cr-portfolio-content-wrap d-md-flex justify-content-between align-items-start">
+                      <div class="cr-portfolio-content">
+                        <h3 class="cr-portfolio-title mb-15">
+                          <a class="tp-line-black" href="https://gtavi.thekhubaib.me/" target="_blank"
+                            title="Sick Day VI GTA 6 Excuse Generator Live">Sick Day VI (Chhutti 6)</a>
+                        </h3>
+                        <p>
+                          Full stack AI sick leave and GTA 6 launch day excuse generator for WhatsApp, Email, and
+                          Telegram with Hinglish &amp; Professional zero-gaming-leak modes, 288-template JSON pool,
+                          Google Gemini API rewriting, and downloadable HTML5 Canvas Leonida Sunset PNG postcards.
+                        </p>
+                      </div>
+                      <div class="cr-portfolio-category md-project-category">
+                        <span>React 19</span>
+                        <span>Gemini AI</span>
+                        <span>Tailwind v4</span>
+                        <span>Express</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ================= ROW 6 (2 ITEMS) ================= -->
+                <!-- 8. TripTrails Travel ERP & Double-Entry Accounting [1 of 2] -->
                 <div class="col-xl-6 col-lg-6">
                   <div class="cr-portfolio-item cr-portfolio-overlay mb-65">
                     <div class="not-hide-cursor" data-cursor="View<br>Repo">
-                      <a class="cursor-hide" href="https://trip-trails-crm.vercel.app"
-                        target="_blank" title="View TripTrails Travel ERP on GitHub">
+                      <a class="cursor-hide" href="https://trip-trails-crm.vercel.app" target="_blank"
+                        title="View TripTrails Travel ERP on GitHub">
                         <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
-                          <img src="assets/img/portfolio/triptrails.webp"
+                          <img src="assets/img/portfolio/triptrails.webp" width="2187" height="1250"
                             alt="TripTrails - Production-Grade Travel ERP, CRM & Double-Entry Accounting Platform"
                             loading="lazy" decoding="async" />
                         </div>
@@ -1085,8 +1362,8 @@
                     <div class="cr-portfolio-content-wrap d-md-flex justify-content-between align-items-start">
                       <div class="cr-portfolio-content">
                         <h3 class="cr-portfolio-title mb-15">
-                          <a class="tp-line-black" href="https://trip-trails-crm.vercel.app"
-                            target="_blank" title="TripTrails Travel ERP">TripTrails Travel ERP</a>
+                          <a class="tp-line-black" href="https://trip-trails-crm.vercel.app" target="_blank"
+                            title="TripTrails Travel ERP">TripTrails Travel ERP</a>
                         </h3>
                         <p>
                           Enterprise Travel ERP, CRM & Accounting Platform with automated double-entry general ledger,
@@ -1094,26 +1371,22 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://trip-trails-crm.vercel.app" target="_blank"
-                          title="Built with Next.js 16">Next.js 16</a>
-                        <a href="https://trip-trails-crm.vercel.app" target="_blank"
-                          title="Built with PostgreSQL">PostgreSQL</a>
-                        <a href="https://trip-trails-crm.vercel.app" target="_blank"
-                          title="Double-Entry General Ledger">Accounting</a>
+                        <span>Next.js 16</span>
+                        <span>PostgreSQL</span>
+                        <span>Accounting</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- ================= ROW 4 (1 FEATURED ITEM) ================= -->
-                <!-- 6. Studio Book CRM (Shaadi Book) [1 of 1] -->
-                <div class="col-12">
+                <!-- 9. Studio Book CRM (Shaadi Book) [2 of 2] -->
+                <div class="col-xl-6 col-lg-6">
                   <div class="cr-portfolio-item cr-portfolio-overlay mb-65">
                     <div class="not-hide-cursor" data-cursor="View<br>Repo">
                       <a class="cursor-hide" href="https://studio-book-demo.vercel.app/" target="_blank"
                         title="View Studio Book CRM on GitHub">
                         <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
-                          <img src="assets/img/portfolio/studiobook.webp"
+                          <img src="assets/img/portfolio/studiobook.webp" width="1544" height="638"
                             alt="Studio Book - Wedding & Event Studio Management Platform" loading="lazy"
                             decoding="async" />
                         </div>
@@ -1131,25 +1404,56 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://studio-book-demo.vercel.app/" target="_blank"
-                          title="Built with React 19">React 19</a>
-                        <a href="https://studio-book-demo.vercel.app/" target="_blank"
-                          title="Built with TypeScript">TypeScript</a>
-                        <a href="https://studio-book-demo.vercel.app/" target="_blank" title="CRM">CRM</a>
+                        <span>React 19</span>
+                        <span>TypeScript</span>
+                        <span>CRM</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- ================= ROW 5 (2 ITEMS) ================= -->
-                <!-- 7. ElectroBiz POS & Installments ERP [1 of 2] -->
+                <!-- ================= ROW 7 (1 FEATURED ITEM) ================= -->
+                <!-- 10. Raj's By AZ Gifting & E-Commerce Platform [1 of 1] -->
+                <div class="col-12">
+                  <div class="cr-portfolio-item cr-portfolio-overlay mb-65">
+                    <div class="not-hide-cursor" data-cursor="View<br>Live">
+                      <a class="cursor-hide" href="https://raj-by-az-demo.vercel.app/" target="_blank">
+                        <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
+                          <img src="assets/img/portfolio/razbyaz.png" width="1598" height="639"
+                            alt="Raj's By AZ Curated Gifting E-Commerce Platform" loading="lazy" decoding="async" />
+                        </div>
+                      </a>
+                    </div>
+                    <div class="cr-portfolio-content-wrap d-md-flex justify-content-between align-items-start">
+                      <div class="cr-portfolio-content">
+                        <h3 class="cr-portfolio-title mb-15">
+                          <a class="tp-line-black" href="https://raj-by-az-demo.vercel.app/" target="_blank">Raj's By
+                            AZ</a>
+                        </h3>
+                        <p>
+                          Curated luxury gifting and e-commerce brand platform featuring multi-tier beauty, jewellery,
+                          and cosmetic gift box bundles (14, 20 &amp; 25 items) with dynamic pricing and smooth
+                          checkout.
+                        </p>
+                      </div>
+                      <div class="cr-portfolio-category md-project-category">
+                        <span>React</span>
+                        <span>TypeScript</span>
+                        <span>Tailwind CSS</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ================= ROW 8 (2 ITEMS) ================= -->
+                <!-- 11. ElectroBiz POS & Installments ERP [1 of 2] -->
                 <div class="col-xl-6 col-lg-6">
                   <div class="cr-portfolio-item cr-portfolio-overlay mb-65">
                     <div class="not-hide-cursor" data-cursor="View<br>Repo">
-                      <a class="cursor-hide" href="https://electrobiz.netlify.app/"
-                        target="_blank" title="View ElectroBiz POS & Installment Management on GitHub">
+                      <a class="cursor-hide" href="https://electrobiz.netlify.app/" target="_blank"
+                        title="View ElectroBiz POS & Installment Management on GitHub">
                         <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
-                          <img src="assets/img/portfolio/electrobiz.webp"
+                          <img src="assets/img/portfolio/electrobiz.webp" width="1565" height="699"
                             alt="ElectroBiz - Modern POS & Installment Management ERP" loading="lazy"
                             decoding="async" />
                         </div>
@@ -1158,8 +1462,8 @@
                     <div class="cr-portfolio-content-wrap d-md-flex justify-content-between align-items-start">
                       <div class="cr-portfolio-content">
                         <h3 class="cr-portfolio-title mb-15">
-                          <a class="tp-line-black" href="https://electrobiz.netlify.app/"
-                            target="_blank" title="ElectroBiz POS & Installments">ElectroBiz POS &amp; ERP</a>
+                          <a class="tp-line-black" href="https://electrobiz.netlify.app/" target="_blank"
+                            title="ElectroBiz POS & Installments">ElectroBiz POS &amp; ERP</a>
                         </h3>
                         <p>
                           Commercial Point of Sale (POS) and installment management ERP for retail showrooms with CNIC
@@ -1168,25 +1472,22 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://electrobiz.netlify.app/" target="_blank"
-                          title="Built with TypeScript">TypeScript</a>
-                        <a href="https://electrobiz.netlify.app/" target="_blank"
-                          title="Installments Management">Installments</a>
-                        <a href="https://electrobiz.netlify.app/" target="_blank"
-                          title="POS Engine">POS Engine</a>
+                        <span>TypeScript</span>
+                        <span>Installments</span>
+                        <span>POS Engine</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- 8. Feeva School Management System [2 of 2] -->
+                <!-- 12. Feeva School Management System [2 of 2] -->
                 <div class="col-xl-6 col-lg-6">
                   <div class="cr-portfolio-item mb-60">
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://feeva.vercel.app/" target="_blank">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/feeva.webp" alt="Feeva School Management System" loading="lazy"
-                            decoding="async" />
+                          <img src="assets/img/portfolio/feeva.webp" alt="Feeva School Management System" width="1800"
+                            height="760" loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -1203,57 +1504,23 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://feeva.vercel.app/" target="_blank">React</a>
-                        <a href="https://feeva.vercel.app/" target="_blank">Express</a>
-                        <a href="https://feeva.vercel.app/" target="_blank">MongoDB</a>
+                        <span>React</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- ================= ROW 6 (1 FEATURED ITEM) ================= -->
-                <!-- 9. Living Lines Interior Design [1 of 1] -->
+                <!-- ================= ROW 9 (1 FEATURED ITEM) ================= -->
+                <!-- 13. SoleBazaar Scalable eCommerce [1 of 1] -->
                 <div class="col-12">
-                  <div class="cr-portfolio-item mb-60">
-                    <div class="not-hide-cursor" data-cursor="View<br>Details">
-                      <a class="cursor-hide" href="https://interior-design-khubaib.vercel.app/"
-                        title="View Living Lines Interior Design App">
-                        <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/livinglines.webp"
-                            alt="Living Lines - Interior Design E-commerce Web Application" loading="lazy"
-                            decoding="async" />
-                        </div>
-                      </a>
-                    </div>
-                    <div
-                      class="cr-portfolio-content-wrap d-flex flex-column flex-xxl-row justify-content-between align-items-start">
-                      <div class="cr-portfolio-content">
-                        <h3 class="cr-portfolio-title mb-15">
-                          <a class="tp-line-black" href="https://interior-design-khubaib.vercel.app/"
-                            title="Living Lines Project">Living Lines</a>
-                        </h3>
-                        <p>
-                          E-commerce platform for curated interior design products and interior designer showcases.
-                        </p>
-                      </div>
-                      <div class="cr-portfolio-category md-project-category">
-                        <a href="https://interior-design-khubaib.vercel.app/" title="Built with Next.js">Next.js</a>
-                        <a href="https://interior-design-khubaib.vercel.app/" title="Built with Express">Express</a>
-                        <a href="https://interior-design-khubaib.vercel.app/" title="Built with Shadcn/UI">Shadcn/UI</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- ================= ROW 7 (2 ITEMS) ================= -->
-                <!-- 10. SoleBazaar Scalable eCommerce [1 of 2] -->
-                <div class="col-xl-6 col-lg-6">
                   <div class="cr-portfolio-item mb-60">
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://sole-bazar.vercel.app/" target="_blank">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
                           <img src="assets/img/portfolio/solebazaar.webp" alt="SoleBazaar Scalable eCommerce Platform"
-                            loading="lazy" decoding="async" />
+                            width="1546" height="643" loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -1269,22 +1536,23 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://sole-bazar.vercel.app/" target="_blank">Next.js</a>
-                        <a href="https://sole-bazar.vercel.app/" target="_blank">Prisma</a>
-                        <a href="https://sole-bazar.vercel.app/" target="_blank">PostgreSQL</a>
+                        <span>Next.js</span>
+                        <span>Prisma</span>
+                        <span>PostgreSQL</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- 11. Cortado Coffee Ordering [2 of 2] -->
+                <!-- ================= ROW 10 (2 ITEMS) ================= -->
+                <!-- 14. Cortado Specialty Coffee [1 of 2] -->
                 <div class="col-xl-6 col-lg-6">
                   <div class="cr-portfolio-item mb-60">
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://cortado-demo.vercel.app/" target="_blank">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
                           <img src="assets/img/portfolio/cortado.webp" alt="Cortado Modern e-commerce platform"
-                            loading="lazy" decoding="async" />
+                            width="1546" height="643" loading="lazy" decoding="async" />
                         </div>
                       </a>
                     </div>
@@ -1300,23 +1568,22 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://cortado-demo.vercel.app/" target="_blank">React</a>
-                        <a href="https://cortado-demo.vercel.app/" target="_blank">Stripe</a>
-                        <a href="https://cortado-demo.vercel.app/" target="_blank">MongoDB</a>
+                        <span>React</span>
+                        <span>Stripe</span>
+                        <span>MongoDB</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- ================= ROW 8 (1 FEATURED ITEM) ================= -->
-                <!-- 12. FindIt Community App [1 of 1] -->
-                <div class="col-12">
+                <!-- 15. FindIt Directory & Marketplace [2 of 2] -->
+                <div class="col-xl-6 col-lg-6">
                   <div class="cr-portfolio-item mb-60">
                     <div class="not-hide-cursor" data-cursor="View<br>Details">
                       <a class="cursor-hide" href="https://find-it-branding-web.vercel.app/"
                         title="View FindIt Mobile Application">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/findit.webp"
+                          <img src="assets/img/portfolio/findit.webp" width="1563" height="645"
                             alt="FindIt - Lost and Found Community Application" loading="lazy" decoding="async" />
                         </div>
                       </a>
@@ -1334,22 +1601,54 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://find-it-branding-web.vercel.app/" title="Built with Next.js">Next.js</a>
-                        <a href="https://find-it-branding-web.vercel.app/" title="Built with PHP Blade">PHP Blade</a>
-                        <a href="https://find-it-branding-web.vercel.app/" title="Built with REST API">REST API</a>
+                        <span>Next.js</span>
+                        <span>PHP Blade</span>
+                        <span>REST API</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- ================= ROW 9 (2 ITEMS) ================= -->
-                <!-- 13. Pizza Xpert Real-time Ordering [1 of 2] -->
+                <!-- ================= ROW 11 (1 FEATURED ITEM) ================= -->
+                <!-- 16. Azzipizza.it Authentic Italian Pizzeria [1 of 1] -->
+                <div class="col-12">
+                  <div class="cr-portfolio-item mb-60">
+                    <div class="not-hide-cursor" data-cursor="View<br>Live">
+                      <a class="cursor-hide" href="https://www.azzipizza.it/" target="_blank">
+                        <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
+                          <img src="assets/img/portfolio/azzpizza.webp" alt="Azzipizza Real-Time Pizza Ordering System"
+                            width="1599" height="645" loading="lazy" decoding="async" />
+                        </div>
+                      </a>
+                    </div>
+                    <div
+                      class="cr-portfolio-content-wrap d-flex flex-column flex-xxl-row justify-content-between align-items-start">
+                      <div class="cr-portfolio-content">
+                        <h3 class="cr-portfolio-title mb-15">
+                          <a class="tp-line-black" href="https://www.azzipizza.it/" target="_blank">Azzipizza.it</a>
+                        </h3>
+                        <p>
+                          Commercial Italian pizza ordering system with live Socket.IO data synchronization and PayPal
+                          payment integration.
+                        </p>
+                      </div>
+                      <div class="cr-portfolio-category md-project-category">
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>Socket.IO</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- ================= ROW 12 (2 ITEMS) ================= -->
+                <!-- 17. Pizza Xpert Online Ordering [1 of 2] -->
                 <div class="col-xl-6 col-lg-6">
                   <div class="cr-portfolio-item mb-60">
                     <div class="not-hide-cursor" data-cursor="View<br>Details">
                       <a class="cursor-hide" href="https://pizza-xpert-demo.vercel.app/" target="_blank">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/pizza-xpert.webp"
+                          <img src="assets/img/portfolio/pizza-xpert.webp" width="1549" height="640"
                             alt="Pizza Xpert premium online pizza ordering platform" loading="lazy" decoding="async" />
                         </div>
                       </a>
@@ -1367,54 +1666,22 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://pizza-xpert-demo.vercel.app/" target="_blank">React</a>
-                        <a href="https://pizza-xpert-demo.vercel.app/" target="_blank">Socket.io</a>
-                        <a href="https://pizza-xpert-demo.vercel.app/" target="_blank">Express.js</a>
+                        <span>React</span>
+                        <span>Socket.io</span>
+                        <span>Express.js</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- 14. Azzipizza.it (Client Platform) [2 of 2] -->
-                <div class="col-xl-6 col-lg-6">
-                  <div class="cr-portfolio-item mb-60">
-                    <div class="not-hide-cursor" data-cursor="View<br>Live">
-                      <a class="cursor-hide" href="https://www.azzipizza.it/" target="_blank">
-                        <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/azzpizza.webp" alt="Azzipizza Real-Time Pizza Ordering System"
-                            loading="lazy" decoding="async" />
-                        </div>
-                      </a>
-                    </div>
-                    <div
-                      class="cr-portfolio-content-wrap d-flex flex-column flex-xxl-row justify-content-between align-items-start">
-                      <div class="cr-portfolio-content">
-                        <h3 class="cr-portfolio-title mb-15">
-                          <a class="tp-line-black" href="https://www.azzipizza.it/" target="_blank">Azzipizza.it</a>
-                        </h3>
-                        <p>
-                          Commercial Italian pizza ordering system with live Socket.IO data synchronization and PayPal
-                          payment integration.
-                        </p>
-                      </div>
-                      <div class="cr-portfolio-category md-project-category">
-                        <a href="https://www.azzipizza.it/" target="_blank">React</a>
-                        <a href="https://www.azzipizza.it/" target="_blank">Node.js</a>
-                        <a href="https://www.azzipizza.it/" target="_blank">Socket.IO</a>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-
-                <!-- ================= ROW 10 (2 ITEMS) ================= -->
-                <!-- 15. The Artisan Wagon [1 of 2] -->
+                <!-- 18. The Artisan Wagon Handcrafted Luxury [2 of 2] -->
                 <div class="col-xl-6 col-lg-6">
                   <div class="cr-portfolio-item mb-60">
                     <div class="not-hide-cursor" data-cursor="View<br>Live">
                       <a class="cursor-hide" href="https://the-artisan-wagon.vercel.app/" target="_blank"
                         title="View The Artisan Wagon Live">
                         <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
-                          <img src="assets/img/portfolio/artisan vegon.webp"
+                          <img src="assets/img/portfolio/artisan vegon.webp" width="1547" height="643"
                             alt="The Artisan Wagon - Restaurant E-commerce and Management System" loading="lazy"
                             decoding="async" />
                         </div>
@@ -1433,48 +1700,48 @@
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://the-artisan-wagon.vercel.app/" target="_blank"
-                          title="Built with Next.js">Next.js</a>
-                        <a href="https://the-artisan-wagon.vercel.app/" target="_blank"
-                          title="Built with Express">Express</a>
-                        <a href="https://the-artisan-wagon.vercel.app/" target="_blank"
-                          title="Built with MongoDB">MongoDB</a>
+                        <span>Next.js</span>
+                        <span>Express</span>
+                        <span>MongoDB</span>
                       </div>
                     </div>
                   </div>
                 </div>
 
-                <!-- 2. Raj's By AZ Gifting & E-Commerce Platform [2 of 2] -->
-                <div class="col-xl-6 col-lg-6">
-                  <div class="cr-portfolio-item cr-portfolio-overlay mb-65">
-                    <div class="not-hide-cursor" data-cursor="View<br>Live">
-                      <a class="cursor-hide" href="https://raj-by-az-demo.vercel.app/" target="_blank">
-                        <div class="cr-portfolio-thumb mb-25 ripple-image ripples">
-                          <img src="assets/img/portfolio/razbyaz.png"
-                            alt="Raj's By AZ Curated Gifting E-Commerce Platform" loading="lazy" decoding="async" />
+                <!-- ================= ROW 13 (1 FEATURED ITEM) ================= -->
+                <!-- 19. Living Lines Interior Design [1 of 1] -->
+                <div class="col-12">
+                  <div class="cr-portfolio-item mb-60">
+                    <div class="not-hide-cursor" data-cursor="View<br>Details">
+                      <a class="cursor-hide" href="https://interior-design-khubaib.vercel.app/"
+                        title="View Living Lines Interior Design App">
+                        <div class="cr-portfolio-thumb mb-20 ripple-image ripples">
+                          <img src="assets/img/portfolio/livinglines.webp" width="1536" height="641"
+                            alt="Living Lines - Interior Design E-commerce Web Application" loading="lazy"
+                            decoding="async" />
                         </div>
                       </a>
                     </div>
-                    <div class="cr-portfolio-content-wrap d-md-flex justify-content-between align-items-start">
+                    <div
+                      class="cr-portfolio-content-wrap d-flex flex-column flex-xxl-row justify-content-between align-items-start">
                       <div class="cr-portfolio-content">
                         <h3 class="cr-portfolio-title mb-15">
-                          <a class="tp-line-black" href="https://raj-by-az-demo.vercel.app/" target="_blank">Raj's By
-                            AZ</a>
+                          <a class="tp-line-black" href="https://interior-design-khubaib.vercel.app/"
+                            title="Living Lines Project">Living Lines</a>
                         </h3>
                         <p>
-                          Curated luxury gifting and e-commerce brand platform featuring multi-tier beauty, jewellery,
-                          and cosmetic gift box bundles (14, 20 &amp; 25 items) with dynamic pricing and smooth
-                          checkout.
+                          E-commerce platform for curated interior design products and interior designer showcases.
                         </p>
                       </div>
                       <div class="cr-portfolio-category md-project-category">
-                        <a href="https://raj-by-az-demo.vercel.app/" target="_blank">React</a>
-                        <a href="https://raj-by-az-demo.vercel.app/" target="_blank">TypeScript</a>
-                        <a href="https://raj-by-az-demo.vercel.app/" target="_blank">Tailwind CSS</a>
+                        <span>Next.js</span>
+                        <span>Express</span>
+                        <span>Shadcn/UI</span>
                       </div>
                     </div>
                   </div>
                 </div>
+
               </div>
             </div>
           </div>
@@ -1691,7 +1958,7 @@
                           <circle cx="4" cy="4" r="4" fill="currentColor"></circle>
                         </svg> </i>Technical Expertise
                     </span>
-                    <h2 class="pp-section-title tp-text-black tp-char-animation">
+                    <h2 class="pp-section-title tp-text-black tp-char-animation" aria-label="Technical Skills">
                       Technical <br />
                       Skills
                     </h2>
@@ -1809,7 +2076,7 @@
         </section>
         <!-- ========== Skill End ========== -->
 
-        <!-- ========== Why Hire Khubaib Shah — SEO & Trust Section ========== -->
+        <!-- ========== Why Hire Khubaib Shah: SEO & Trust Section ========== -->
         <section id="why-hire" class="pp-why-hire-area pt-120 pb-100" data-bg-color="#2F1F19">
           <div class="container container-1444">
             <div class="pp-section-content-wrapper mb-60">
@@ -1827,12 +2094,24 @@
             <div class="row">
               <div class="col-lg-4 mb-40">
                 <div class="tp_fade_anim" data-delay="0.1">
-                  <h3 style="color: #FFF669; font-size: 22px; margin-bottom: 15px; font-weight: 600;">
-                    Direct Senior Engineer — No Middlemen
+                  <h3 class="d-flex align-items-center"
+                    style="color: #FFF669; font-size: 22px; margin-bottom: 15px; font-weight: 600; gap: 12px;">
+                    <span class="d-inline-flex align-items-center justify-content-center"
+                      style="width: 40px; height: 40px; border-radius: 10px; background: rgba(255, 246, 105, 0.12); border: 1px solid rgba(255, 246, 105, 0.3); flex-shrink: 0;">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                          d="M20 21V19C20 17.9391 19.5786 16.9217 18.8284 16.1716C18.0783 15.4214 17.0609 15 16 15H8C6.93913 15 5.92172 15.4214 5.17157 16.1716C4.42143 16.9217 4 17.9391 4 19V21"
+                          stroke="#FFF669" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        <circle cx="12" cy="7" r="4" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span>Direct Senior Engineer, No Middlemen</span>
                   </h3>
                   <p style="color: rgba(255,255,255,0.75); line-height: 1.7; font-size: 16px;">
                     Unlike agencies that hand your project to junior developers, you work directly with
-                    <strong>Khubaib Shah</strong> — the same senior engineer who architects, codes, tests, and
+                    <strong>Khubaib Shah</strong>, the same senior engineer who architects, codes, tests, and
                     deploys your software. Every line of code is written by the person you communicate with.
                     No miscommunication, no delays, no hidden juniors.
                   </p>
@@ -1840,64 +2119,124 @@
               </div>
               <div class="col-lg-4 mb-40">
                 <div class="tp_fade_anim" data-delay="0.2">
-                  <h3 style="color: #FFF669; font-size: 22px; margin-bottom: 15px; font-weight: 600;">
-                    Production-Proven, Not Just Prototypes
+                  <h3 class="d-flex align-items-center"
+                    style="color: #FFF669; font-size: 22px; margin-bottom: 15px; font-weight: 600; gap: 12px;">
+                    <span class="d-inline-flex align-items-center justify-content-center"
+                      style="width: 40px; height: 40px; border-radius: 10px; background: rgba(255, 246, 105, 0.12); border: 1px solid rgba(255, 246, 105, 0.3); flex-shrink: 0;">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                          d="M4.5 16.5C3.5 15.5 3 14 3 12.5C3 8.9 5.9 6 9.5 6C10.2 6 10.9 6.1 11.5 6.4C12.5 3.8 15 2 18 2C21.9 2 25 5.1 25 9C25 9.7 24.9 10.4 24.6 11"
+                          stroke="#FFF669" stroke-width="2" stroke-linecap="round" />
+                        <path d="M9 12L12 15L20 7" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span>Production Proven, Not Just Prototypes</span>
                   </h3>
                   <p style="color: rgba(255,255,255,0.75); line-height: 1.7; font-size: 16px;">
                     Every project in my portfolio handles <strong>real users, real money, and real daily
-                    transactions</strong>. From ERPs processing thousands of accounting entries to SaaS platforms
-                    with Stripe subscriptions and POS systems printing receipts — I build software that works
+                      transactions</strong>. From ERPs processing thousands of accounting entries to SaaS platforms
+                    with Stripe subscriptions and POS systems printing receipts, I build software that works
                     under pressure, not just in demos.
                   </p>
                 </div>
               </div>
               <div class="col-lg-4 mb-40">
                 <div class="tp_fade_anim" data-delay="0.3">
-                  <h3 style="color: #FFF669; font-size: 22px; margin-bottom: 15px; font-weight: 600;">
-                    Global Reach, Competitive Pricing
+                  <h3 class="d-flex align-items-center"
+                    style="color: #FFF669; font-size: 22px; margin-bottom: 15px; font-weight: 600; gap: 12px;">
+                    <span class="d-inline-flex align-items-center justify-content-center"
+                      style="width: 40px; height: 40px; border-radius: 10px; background: rgba(255, 246, 105, 0.12); border: 1px solid rgba(255, 246, 105, 0.3); flex-shrink: 0;">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <circle cx="12" cy="12" r="10" stroke="#FFF669" stroke-width="2" />
+                        <path d="M2 12H22" stroke="#FFF669" stroke-width="2" />
+                        <path
+                          d="M12 2C14.5 4.5 15.9 8.1 16 12C15.9 15.9 14.5 19.5 12 22C9.5 19.5 8.1 15.9 8 12C8.1 8.1 9.5 4.5 12 2Z"
+                          stroke="#FFF669" stroke-width="2" />
+                      </svg>
+                    </span>
+                    <span>Global Reach, Competitive Pricing</span>
                   </h3>
                   <p style="color: rgba(255,255,255,0.75); line-height: 1.7; font-size: 16px;">
                     Based in Karachi, Pakistan with clients across the <strong>USA, UK, UAE, Germany, Italy,
-                    Canada, and Australia</strong>. You get senior-level engineering talent at rates significantly
-                    below US/EU agency pricing. Flexible engagement models: fixed-price projects, hourly consulting,
-                    or monthly retainers with 24-hour response times.
+                      Canada, and Australia</strong>. You get senior level engineering talent at rates significantly
+                    below US or European agency pricing. Flexible engagement models include fixed price projects, hourly
+                    consulting,
+                    or monthly retainers with 24 hour response times.
                   </p>
                 </div>
               </div>
               <div class="col-lg-4 mb-40">
                 <div class="tp_fade_anim" data-delay="0.4">
-                  <h3 style="color: #FFF669; font-size: 22px; margin-bottom: 15px; font-weight: 600;">
-                    Full Stack Means Full Stack
+                  <h3 class="d-flex align-items-center"
+                    style="color: #FFF669; font-size: 22px; margin-bottom: 15px; font-weight: 600; gap: 12px;">
+                    <span class="d-inline-flex align-items-center justify-content-center"
+                      style="width: 40px; height: 40px; border-radius: 10px; background: rgba(255, 246, 105, 0.12); border: 1px solid rgba(255, 246, 105, 0.3); flex-shrink: 0;">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <rect x="2" y="3" width="20" height="14" rx="2" stroke="#FFF669" stroke-width="2" />
+                        <path d="M8 21H16" stroke="#FFF669" stroke-width="2" stroke-linecap="round" />
+                        <path d="M12 17V21" stroke="#FFF669" stroke-width="2" stroke-linecap="round" />
+                      </svg>
+                    </span>
+                    <span>Full Stack Means Full Stack</span>
                   </h3>
                   <p style="color: rgba(255,255,255,0.75); line-height: 1.7; font-size: 16px;">
-                    I don't just build frontends. I architect complete systems: <strong>React/Next.js UI, Node.js
-                    APIs, PostgreSQL databases, Prisma ORM migrations, Stripe/PayPal payments, Socket.IO real-time
-                    engines, authentication, and cloud deployment</strong>. One developer. One codebase. Zero
+                    I do not just build frontends. I architect complete systems including <strong>React or Next.js UI,
+                      Node.js
+                      APIs, PostgreSQL databases, Prisma ORM migrations, Stripe and PayPal payments, Socket.IO real time
+                      engines, authentication, and cloud deployment</strong>. One developer, one codebase, zero
                     coordination overhead.
                   </p>
                 </div>
               </div>
               <div class="col-lg-4 mb-40">
                 <div class="tp_fade_anim" data-delay="0.5">
-                  <h3 style="color: #FFF669; font-size: 22px; margin-bottom: 15px; font-weight: 600;">
-                    Deep Domain Knowledge
+                  <h3 class="d-flex align-items-center"
+                    style="color: #FFF669; font-size: 22px; margin-bottom: 15px; font-weight: 600; gap: 12px;">
+                    <span class="d-inline-flex align-items-center justify-content-center"
+                      style="width: 40px; height: 40px; border-radius: 10px; background: rgba(255, 246, 105, 0.12); border: 1px solid rgba(255, 246, 105, 0.3); flex-shrink: 0;">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M3 3V21H21" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M7 14L11 9L15 13L21 6" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                        <path d="M21 10V6H17" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span>Deep Domain Knowledge</span>
                   </h3>
                   <p style="color: rgba(255,255,255,0.75); line-height: 1.7; font-size: 16px;">
-                    Beyond coding, I understand <strong>business logic</strong>. I've implemented
-                    <strong>double-entry accounting general ledgers</strong>, designed installment risk assessment
-                    engines, built multi-branch travel ERP workflows, and engineered multi-tenant SaaS with
-                    role-based access control. I don't just write code — I solve business problems.
+                    Beyond coding, I understand <strong>business logic</strong>. I have implemented
+                    <strong>double entry accounting general ledgers</strong>, designed installment risk assessment
+                    engines, built multi branch travel ERP workflows, and engineered multi tenant SaaS with
+                    role based access control. I do not just write code, I solve business problems.
                   </p>
                 </div>
               </div>
               <div class="col-lg-4 mb-40">
                 <div class="tp_fade_anim" data-delay="0.6">
-                  <h3 style="color: #FFF669; font-size: 22px; margin-bottom: 15px; font-weight: 600;">
-                    Transparent &amp; Accountable
+                  <h3 class="d-flex align-items-center"
+                    style="color: #FFF669; font-size: 22px; margin-bottom: 15px; font-weight: 600; gap: 12px;">
+                    <span class="d-inline-flex align-items-center justify-content-center"
+                      style="width: 40px; height: 40px; border-radius: 10px; background: rgba(255, 246, 105, 0.12); border: 1px solid rgba(255, 246, 105, 0.3); flex-shrink: 0;">
+                      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M12 22S20 18 20 12V5L12 2L4 5V12C4 18 12 22 12 22Z" stroke="#FFF669" stroke-width="2"
+                          stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M9 12L11 14L15 10" stroke="#FFF669" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round" />
+                      </svg>
+                    </span>
+                    <span>Transparent &amp; Accountable</span>
                   </h3>
                   <p style="color: rgba(255,255,255,0.75); line-height: 1.7; font-size: 16px;">
                     Every project comes with <strong>daily progress updates, Git commit history, milestone
-                    tracking</strong>, and demo deployments so you see progress in real time. I provide an initial
+                      tracking</strong>, and demo deployments so you see progress in real time. I provide an initial
                     architectural assessment and scope estimate within 24 hours. No surprises, no scope creep
                     without discussion.
                   </p>
@@ -1908,16 +2247,20 @@
             <!-- Technologies I Work With -->
             <div class="row mt-40">
               <div class="col-lg-12">
-                <h3 class="tp_fade_anim" style="color: #FFF669; font-size: 28px; margin-bottom: 25px; font-weight: 600; text-align: center;">
+                <h3 class="tp_fade_anim"
+                  style="color: #FFF669; font-size: 28px; margin-bottom: 25px; font-weight: 600; text-align: center;">
                   Technologies &amp; Tools Khubaib Shah Works With
                 </h3>
-                <p class="tp_fade_anim" style="color: rgba(255,255,255,0.75); line-height: 1.9; font-size: 17px; text-align: center; max-width: 900px; margin: 0 auto;">
-                  <strong>Frontend:</strong> Next.js 16, React 19, TypeScript, JavaScript, Tailwind CSS, ShadCN UI, Zustand, TanStack Query, GSAP Animations &nbsp;•&nbsp;
+                <p class="tp_fade_anim"
+                  style="color: rgba(255,255,255,0.75); line-height: 1.9; font-size: 17px; text-align: center; max-width: 900px; margin: 0 auto;">
+                  <strong>Frontend:</strong> Next.js 16, React 19, TypeScript, JavaScript, Tailwind CSS, ShadCN UI,
+                  Zustand, TanStack Query, GSAP Animations &nbsp;•&nbsp;
                   <strong>Backend:</strong> Node.js, Express.js, REST APIs, Socket.IO, Webhooks &nbsp;•&nbsp;
                   <strong>Database:</strong> PostgreSQL, MongoDB, Prisma ORM, Supabase &nbsp;•&nbsp;
-                  <strong>AI/ML:</strong> OpenAI API, Google Gemini API, Claude API, Prompt Engineering, RAG Pipelines &nbsp;•&nbsp;
+                  <strong>AI &amp; Machine Learning:</strong> OpenAI API, Google Gemini API, Claude API, Prompt
+                  Engineering, RAG Pipelines &nbsp;•&nbsp;
                   <strong>Payments:</strong> Stripe, PayPal &nbsp;•&nbsp;
-                  <strong>DevOps:</strong> Vercel, AWS, Docker, Git, GitHub Actions &nbsp;•&nbsp;
+                  <strong>DevOps &amp; Cloud:</strong> Vercel, AWS, Docker, Git, GitHub Actions &nbsp;•&nbsp;
                   <strong>Design:</strong> Figma, Responsive Design, Web Performance Optimization
                 </p>
               </div>
@@ -1945,7 +2288,8 @@
                   <div class="swiper-slide">
                     <div class="md-testimonial-item">
                       <div class="md-testimonial-qoute mb-25">
-                        <img src="assets/img/testimonial/qoute.png" alt="" loading="lazy" decoding="async" />
+                        <img src="assets/img/testimonial/qoute.png" alt="Quote icon" width="63" height="42"
+                          loading="lazy" decoding="async" />
                       </div>
                       <div class="md-testimonial-text mb-30">
                         <p>
@@ -1956,7 +2300,8 @@
                       </div>
                       <div class="md-testimonial-author-wrapper d-flex align-items-center">
                         <div class="md-testimonial-author-avatar">
-                          <img src="assets/img/testimonial/author-1.png" alt="" loading="lazy" decoding="async" />
+                          <img src="assets/img/testimonial/author-1.png" alt="Client testimonial avatar" width="60"
+                            height="60" loading="lazy" decoding="async" />
                         </div>
                         <div class="md-testimonial-author-info">
                           <h4 class="md-testimonial-author-title">
@@ -1970,7 +2315,8 @@
                   <div class="swiper-slide">
                     <div class="md-testimonial-item">
                       <div class="md-testimonial-qoute mb-25">
-                        <img src="assets/img/testimonial/qoute.png" alt="" loading="lazy" decoding="async" />
+                        <img src="assets/img/testimonial/qoute.png" alt="Quote icon" width="63" height="42"
+                          loading="lazy" decoding="async" />
                       </div>
                       <div class="md-testimonial-text mb-30">
                         <p>
@@ -1981,7 +2327,8 @@
                       </div>
                       <div class="md-testimonial-author-wrapper d-flex align-items-center">
                         <div class="md-testimonial-author-avatar">
-                          <img src="assets/img/testimonial/author-2.png" alt="" loading="lazy" decoding="async" />
+                          <img src="assets/img/testimonial/author-2.png" alt="Client testimonial avatar" width="60"
+                            height="60" loading="lazy" decoding="async" />
                         </div>
                         <div class="md-testimonial-author-info">
                           <h4 class="md-testimonial-author-title">
@@ -1995,7 +2342,8 @@
                   <div class="swiper-slide">
                     <div class="md-testimonial-item">
                       <div class="md-testimonial-qoute mb-25">
-                        <img src="assets/img/testimonial/qoute.png" alt="" loading="lazy" decoding="async" />
+                        <img src="assets/img/testimonial/qoute.png" alt="Quote icon" width="63" height="42"
+                          loading="lazy" decoding="async" />
                       </div>
                       <div class="md-testimonial-text mb-30">
                         <p>
@@ -2006,7 +2354,8 @@
                       </div>
                       <div class="md-testimonial-author-wrapper d-flex align-items-center">
                         <div class="md-testimonial-author-avatar">
-                          <img src="assets/img/testimonial/author-3.png" alt="" loading="lazy" decoding="async" />
+                          <img src="assets/img/testimonial/author-3.png" alt="Client testimonial avatar" width="60"
+                            height="60" loading="lazy" decoding="async" />
                         </div>
                         <div class="md-testimonial-author-info">
                           <h4 class="md-testimonial-author-title">
@@ -2020,7 +2369,8 @@
                   <div class="swiper-slide">
                     <div class="md-testimonial-item">
                       <div class="md-testimonial-qoute mb-25">
-                        <img src="assets/img/testimonial/qoute.png" alt="" loading="lazy" decoding="async" />
+                        <img src="assets/img/testimonial/qoute.png" alt="Quote icon" width="63" height="42"
+                          loading="lazy" decoding="async" />
                       </div>
                       <div class="md-testimonial-text mb-30">
                         <p>
@@ -2031,7 +2381,8 @@
                       </div>
                       <div class="md-testimonial-author-wrapper d-flex align-items-center">
                         <div class="md-testimonial-author-avatar">
-                          <img src="assets/img/testimonial/author-1.png" alt="" loading="lazy" decoding="async" />
+                          <img src="assets/img/testimonial/author-1.png" alt="Client testimonial avatar" width="60"
+                            height="60" loading="lazy" decoding="async" />
                         </div>
                         <div class="md-testimonial-author-info">
                           <h4 class="md-testimonial-author-title">
@@ -2193,24 +2544,26 @@
               <div class="row justify-content-center">
                 <div class="col-xl-12">
                   <div class="tp-service-title-box p-relative">
-                    <h2 class="tp-service-2-title fw-700 mb-30 tp-char-animation">
+                    <h2 class="tp-service-2-title fw-700 mb-30 tp-char-animation"
+                      aria-label="Have a Project or Software Problem to Solve?">
                       Have a Project or <br />
                       Software Problem to Solve?
                     </h2>
                   </div>
                   <div class="tp_about_us-content-box d-lg-flex justify-content-center">
                     <div class="tp_about_us-subtitle d-flex justify-content-lg-end">
-                      <span class="tp-service-2-subtitle fs-18 pre mb-15 tp_fade_anim">Hire Khubaib</span>
+                      <span class="tp-service-2-subtitle fs-18 pre mb-15 tp_fade_anim"
+                        style="color: #111013; font-weight: 600;">Hire Khubaib</span>
                       <span class="tp-service-2-arrow">
                         <svg xmlns="http://www.w3.org/2000/svg" width="81" height="9" viewBox="0 0 81 9" fill="none">
-                          <rect y="4" width="80" height="1" fill="currentColor"></rect>
-                          <path d="M77 7.96366L80.5 4.48183L77 1" stroke="currentColor" stroke-linecap="round"
+                          <rect y="4" width="80" height="1" fill="#111013"></rect>
+                          <path d="M77 7.96366L80.5 4.48183L77 1" stroke="#111013" stroke-linecap="round"
                             stroke-linejoin="round"></path>
                         </svg>
                       </span>
                     </div>
                     <div class="tp-service-2-text tp_text_anim">
-                      <p>
+                      <p style="color: #111013; font-weight: 500;">
                         Available for freelance software development, building custom SaaS/ERPs,
                         <br />
                         and debugging or completing AI-driven applications worldwide.
@@ -2226,13 +2579,13 @@
               <div class="row">
                 <div class="col-md-6">
                   <div class="tp-contact-us-text smooth tp_fade_anim" data-delay="0.3">
-                    <a href="#down">
-                      <p>
+                    <a href="#down" aria-label="Scroll to contact form">
+                      <p style="color: #111013; font-weight: 600;">
                         <svg xmlns="http://www.w3.org/2000/svg" width="15" height="21" viewBox="0 0 15 21" fill="none">
-                          <rect x="6.25781" width="1.5" height="21" fill="#000" />
-                          <path d="M14.1641 13.6257C10.28 13.6257 7.13714 16.9239 7.13714 21" stroke="#000"
+                          <rect x="6.25781" width="1.5" height="21" fill="#111013" />
+                          <path d="M14.1641 13.6257C10.28 13.6257 7.13714 16.9239 7.13714 21" stroke="#111013"
                             stroke-width="1.5" stroke-miterlimit="10" />
-                          <path d="M7.13672 21C7.13672 16.9239 3.99384 13.6257 0.109797 13.6257" stroke="#000"
+                          <path d="M7.13672 21C7.13672 16.9239 3.99384 13.6257 0.109797 13.6257" stroke="#111013"
                             stroke-width="1.5" stroke-miterlimit="10" />
                         </svg>
                         Scroll to form
@@ -2242,7 +2595,7 @@
                 </div>
                 <div class="col-md-6">
                   <div class="tp-contact-us-text d-none d-md-block text-md-end tp_fade_anim" data-delay="0.3">
-                    <p>Reach out anytime</p>
+                    <p style="color: #111013; font-weight: 500;">Reach out anytime</p>
                   </div>
                 </div>
               </div>
@@ -2261,7 +2614,8 @@
                   <div
                     class="tp-contact-us-graphic p-relative pr-lg-40 tp_fade_anim w-100 h-100 d-flex align-items-center justify-content-center"
                     data-fade-from="left">
-                    <img src="assets/img/contact/model.webp" alt="Let's connect" loading="lazy" decoding="async"
+                    <img src="assets/img/contact/model.webp" alt="Let's connect" width="1254" height="1254"
+                      loading="lazy" decoding="async"
                       style="max-width: 100%; border-radius: 10px; box-shadow: 0 10px 30px rgba(0,0,0,0.15); object-fit: cover;" />
                   </div>
                 </div>
@@ -2277,27 +2631,26 @@
                       <div class="row">
                         <div class="col-lg-6">
                           <div class="tp-contact-form-input mb-20">
-                            <label class="text-white">Full name*</label>
-                            <input name="name" type="text" required />
+                            <label for="contact-name" class="text-white">Full name*</label>
+                            <input id="contact-name" name="name" type="text" autocomplete="name" required />
                           </div>
                         </div>
                         <div class="col-lg-6">
                           <div class="tp-contact-form-input mb-20">
-                            <label class="text-white">Email address*</label>
-                            <input name="email" type="email" required />
+                            <label for="contact-email" class="text-white">Email address*</label>
+                            <input id="contact-email" name="email" type="email" autocomplete="email" required />
                           </div>
                         </div>
                         <div class="col-lg-12">
                           <div class="tp-contact-form-input mb-20">
-                            <label class="text-white">Subject</label>
-                            <input name="subject" type="text" />
+                            <label for="contact-subject" class="text-white">Subject</label>
+                            <input id="contact-subject" name="subject" type="text" />
                           </div>
                         </div>
                         <div class="col-lg-12">
                           <div class="tp-contact-form-input mb-20">
-                            <label class="text-white">How Can We Help You*
-                            </label>
-                            <textarea name="message" required></textarea>
+                            <label for="contact-message" class="text-white">How Can We Help You*</label>
+                            <textarea id="contact-message" name="message" required></textarea>
                           </div>
                           <div class="tp-contact-form-btn">
                             <button class="w-100" type="submit">

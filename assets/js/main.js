@@ -1039,15 +1039,7 @@
 		tp_text_invert_2();
 		tp_text_invert_3();
 
-		const heroImg = document.getElementById("pp-hero-person-move");
-		if (heroImg && heroImg.complete) {
-			dismissPreloader();
-		} else if (heroImg) {
-			heroImg.addEventListener("load", dismissPreloader);
-			setTimeout(dismissPreloader, 700);
-		} else {
-			dismissPreloader();
-		}
+		dismissPreloader();
 	});
 
 	windowOn.on('load', function () {

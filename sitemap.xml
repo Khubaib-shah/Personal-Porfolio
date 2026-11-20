@@ -5,7 +5,7 @@
   <!-- Homepage / Main Portfolio Page -->
   <url>
     <loc>https://thekhubaib.me/</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
     <image:image>
@@ -16,6 +16,21 @@
     <image:image>
       <image:loc>https://thekhubaib.me/assets/img/logo/logo-white.png</image:loc>
       <image:title>Khubaib Shah Logo</image:title>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/portfolio/3uqab.jpg</image:loc>
+      <image:title>3Uqab Luxury Perfume E-Commerce and Operations Platform by Khubaib Shah</image:title>
+      <image:caption>Full-stack luxury perfume e-commerce boutique with unlimited products, order lifecycle dashboard, campaigns, and WhatsApp CRM.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/portfolio/poultry-farm.jpg</image:loc>
+      <image:title>Al-Madina Poultry Farm and Shop ERP Management System by Khubaib Shah</image:title>
+      <image:caption>Progressive Web App for live poultry procurement, truck landed-cost accounting, FIFO batch inventory, and P&amp;L reporting.</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://thekhubaib.me/assets/img/portfolio/gta6-excuse.jpg</image:loc>
+      <image:title>Sick Day VI - GTA 6 Hinglish Excuse Generator by Khubaib Shah</image:title>
+      <image:caption>Full-stack AI sick day excuse generator with Gemini API, Hinglish modes, and Canvas PNG postcard export.</image:caption>
     </image:image>
     <image:image>
       <image:loc>https://thekhubaib.me/assets/img/portfolio/applyos.webp</image:loc>
@@ -67,7 +82,7 @@
   <!-- Privacy Policy Page -->
   <url>
     <loc>https://thekhubaib.me/privacy-policy.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
@@ -75,7 +90,7 @@
   <!-- Terms and Conditions Page -->
   <url>
     <loc>https://thekhubaib.me/terms-conditions.html</loc>
-    <lastmod>2026-11-10</lastmod>
+    <lastmod>2026-11-20</lastmod>
     <changefreq>yearly</changefreq>
     <priority>0.3</priority>
   </url>
