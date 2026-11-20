@@ -6,7 +6,7 @@ Allow: /
 
 # Sitemap and LLM discovery
 Sitemap: https://thekhubaib.me/sitemap.xml
-llms-txt: https://thekhubaib.me/llms.txt
+# LLM Context: https://thekhubaib.me/llms.txt
 
 # Crawl-delay (optional, for polite crawling)
 Crawl-delay: 1
